@@ -1,7 +1,7 @@
 Scrum Guide™
 ============
 
-Ta wersja Przewodnika Scrum w formacie Markdown i HTML jest konwersją polskiego tłumaczenia wersji PDF z Listopada 2017 [dostępnej w serwisie www.scrumguides.org](http://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf).
+Ta wersja Przewodnika Scrum w formacie markdown jest konwersją polskiego tłumaczenia wersji PDF z listopada 2017 [dostępnej w serwisie www.scrumguides.org](http://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf).
 
 
 Przewodnik po Scrumie: Reguły gry
@@ -232,7 +232,7 @@ Scrum Master służy pomocą całej organizacji na kilka sposobów, na przykład
 Wydarzenia w Scrumie
 --------------------
 
-Wydarzenia (ang. *events*) opisane w Scrumie są używane do wprowadzenia regularności i ograniczenia potrzeby organizowania innych, nieujętych w Scrumie spotkań. Wszystkie wydarzenia w Scrumie są ograniczone czasowo (ang. timebox), co oznacza, że mają ustalony maksymalny czas trwania. Po rozpoczęciu Sprintu jego czas trwania jest stały – nie może być skracany ani wydłużany. Pozostałe wydarzenia mogą zakończyć się, kiedy ich cel zostanie osiągnięty, co zapewnia właściwe wykorzystanie czasu i zapobiega wkradaniu się marnotrawstwa w proces.
+Wydarzenia (ang. *events*) opisane w Scrumie są używane do wprowadzenia regularności i ograniczenia potrzeby organizowania innych, nieujętych w Scrumie spotkań. Wszystkie wydarzenia w Scrumie są ograniczone czasowo (ang. *timebox*), co oznacza, że mają ustalony maksymalny czas trwania. Po rozpoczęciu Sprintu jego czas trwania jest stały – nie może być skracany ani wydłużany. Pozostałe wydarzenia mogą zakończyć się, kiedy ich cel zostanie osiągnięty, co zapewnia właściwe wykorzystanie czasu i zapobiega wkradaniu się marnotrawstwa w proces.
 
 Poza Sprintem, który zawiera w sobie pozostałe wydarzenia, każde ze wydarzeń w Scrumie jest formalną okazją do przeprowadzenia celowej inspekcji i dokonania adaptacji. Wydarzenia w Scrumie są specjalnie zaprojektowane w taki sposób, aby zapewnić niezbędną przejrzystość i umożliwić inspekcję. Nieuwzględnienie któregokolwiek z nich redukuje przejrzystość i jest utraconą szansą na dokonanie inspekcji i adaptacji.
 
@@ -288,8 +288,7 @@ Właściciel Produktu może pomóc wyjaśniać wybrane elementy Backlogu Produkt
 
 Zanim Planowanie Sprintu dobiegnie końca, Zespół Deweloperski powinien być w stanie wytłumaczyć Właścicielowi Produktu i Scrum Masterowi, w jaki sposób ma zamiar pracować, organizując się samodzielnie, by osiągnąć Cel Sprintu i wytworzyć oczekiwany Przyrost.
 
-### Cel Sprintu
-
+#### Cel Sprintu
 Cel Sprintu to założenie, które ma zostać spełnione w ramach Sprintu poprzez implementację wybranych elementów Backlogu Produktu. Dostarcza on Zespołowi Deweloperskiemu wskazówek w jakim celu tworzony jest Przyrost. Jest on definiowany podczas Planowania Sprintu. Cel Sprintu daje Zespołowi Deweloperskiemu pewną swobodę co do sposobu, w jaki dana funkcjonalność zostanie zaimplementowana. Zazwyczaj wybrane elementy Backlogu Sprintu stanowią spójną funkcję systemu, która może stać się Celem Sprintu. Celem Sprintu może także być cokolwiek, co zapewni spójność i spowoduje, że członkowie Zespołu Deweloperskiego będą pracowali razem, a nie nad odrębnymi inicjatywami.
 
 W trakcie Sprintu Zespół Deweloperski pamięta o Celu Sprintu. Aby go osiągnąć, wprowadza nowe funkcjonalności i wdraża nowe technologie. Jeśli podczas Sprintu charakter prac okazuje się inny niż oczekiwał Zespół Deweloperski, Zespół Deweloperski podejmuje współpracę z Właścicielem Produktu, aby renegocjować zakres Backlogu Sprintu.
@@ -314,3 +313,197 @@ Scrum Master zapewnia, że Zespół Deweloperski spotyka się w ramach Codzienne
 Codzienny Scrum jest wewnętrznym spotkaniem Zespołu Deweloperskiego. Jeśli inne osoby są obecne, Scrum Master upewnia się, że nie zaburzają one jego przebiegu.
 
 Codzienne Scrumy poprawiają komunikację, eliminują inne spotkania, identyfikują i usuwają przeszkody, sprzyjają szybkiemu podejmowaniu decyzji i podnoszą poziom wiedzy Zespołu Deweloperskiego. Jest to spotkanie kluczowe dla procesu inspekcji i adaptacji.
+
+### Przegląd Sprintu
+
+Przegląd Sprintu jest organizowany na zakończenie Sprintu w celu przeprowadzenia inspekcji Przyrostu i, jeśli zajdzie taka potrzeba, dostosowania Backlogu Produktu. Podczas Przeglądu Sprintu Zespół Scrumowy i interesariusze wspólnie analizują to, co zostało ukończone w Sprincie. Na tej podstawie oraz na podstawie zmian wprowadzonych do Backlogu Produktu w trakcie trwania Sprintu, uczestnicy spotkania wspólnie rozważają, co mogłoby być wykonane w następnej kolejności, aby zoptymalizować wartość. Przegląd Sprintu jest nieformalnym spotkaniem roboczym, a nie spotkaniem statusowym. Prezentacja Przyrostu ma na celu uzyskanie informacji zwrotnej i pobudzenie współpracy.
+
+Przegląd Sprintu jest maksymalnie czterogodzinnym spotkaniem dla miesięcznego Sprintu
+i krótszym dla krótszych Sprintów. Rolą Scrum Mastera jest zapewnienie, że spotkanie się
+odbywa i jego uczestnicy rozumieją jego cel. Scrum Master uczy wszystkie zaangażowane
+osoby, jak utrzymywać je w wyznaczonych ramach czasowych.
+
+Przegląd Sprintu obejmuje następujące punkty:
+
+  * Obecni są Zespół Scrumowy oraz kluczowi interesariusze zaproszeni przez Właściciela Produktu.
+  * Właściciel Produktu wyjaśnia, które elementy Backlogu Produktu zostały „Ukończone”, a które nie.
+  * Zespół Deweloperski omawia, co poszło dobrze w trakcie Sprintu, jakie napotkano problemy oraz jak te problemy rozwiązano.
+  * Zespół Deweloperski prezentuje „Ukończoną” pracę i odpowiada na pytania dotyczące Przyrostu.
+  * Właściciel Produktu omawia Backlog Produktu w jego aktualnej postaci. Jeśli zachodzi taka potrzeba, przewiduje prawdopodobny termin zakończenia prac, biorąc pod uwagę dotychczasowe postępy.
+  * Cała grupa wspólnie omawia kolejne kroki. W ten sposób Przegląd Sprintu dostarcza wartościowego wkładu w następujące po nim Planowanie Sprintu.
+  * Dokonuje się przeglądu tego, jak rynek lub potencjalne zastosowanie produktu mogły się zmienić i co w tej sytuacji jest najbardziej wartościową rzeczą do zrobienia.
+  * Rewiduje się czas, budżet, potencjalne możliwości i uwarunkowania rynkowe dla kolejnego przewidywanego wydania produktu.
+
+Rezultatem Przeglądu Sprintu jest zaktualizowany Backlog Produktu, pokazujący, które elementy prawdopodobnie zostaną zaplanowane na kolejny Sprint. Ponadto Backlog Produktu może zostać generalnie zmieniony w taki sposób, aby wykorzystać nadarzające się okazje.
+
+### Retrospektywa Sprintu
+
+Retrospektywa Sprintu jest okazją dla Zespołu Scrumowego do przeprowadzenia inspekcji swoich działań i opracowania planu usprawnień, który zostanie wcielony w życie w najbliższym Sprincie.
+
+Retrospektywa Sprintu przeprowadzana jest po Przeglądzie, a przed kolejnym Planowaniem Sprintu.  Trwa nie dłużej niż trzy godziny dla Sprintów miesięcznej długości. Dla krótszych Sprintów zwykle zajmuje mniej czasu. Scrum Master zapewnia, że wydarzenie się odbywa, a uczestnicy rozumieją jego cel.
+
+Scrum Master zapewnia, by spotkanie to przebiegało w pozytywnej atmosferze i było produktywne. Uczy uczestników w jaki sposób można je utrzymać w ustalonych ramach czasowych. Scrum Master uczestniczy w Retrospektywie jako zwykły członek zespołu, reprezentując perspektywę odpowiedzialności za Scruma.
+
+Retrospektywa Sprintu ma na celu:
+
+  * sprawdzenie, co działo się w ostatnim Sprincie, biorąc pod uwagę ludzi, relacje, proces i narzędzia,
+  * zidentyfikowanie i uporządkowanie istotnych elementów, które sprawdziły się w działaniu oraz tych, które kwalifikują się do usprawnienia,
+  * stworzenie planu wprowadzania w życie usprawnień sposobu wykonywania pracy przez Zespół Scrumowy.
+
+Scrum Master zachęca członków Zespołu Scrumowego do usprawniania, w ramach Scruma, stosowanych przez zespół procesu i praktyk wytwórczych tak, aby w kolejnym Sprincie uczynić pracę bardziej efektywną i dającą więcej radości. Podczas każdej Retrospektywy Sprintu Zespół Scrumowy planuje, w jaki sposób podniesie jakość produktu poprzez usprawnienie pracy i dostosowanie definicji „Ukończenia”. Robi to w taki sposób by było to odpowiednie i nie stało w konflikcie z wytwarzanym produktem i wytycznymi organizacji.
+
+Zanim Retrospektywa Sprintu dobiegnie końca, Zespół Scrumowy powinien zidentyfikować usprawnienia, które planuje wprowadzić w kolejnym Sprincie. Zastosowanie tych usprawnień w kolejnych Sprintach jest przejawem adaptacji, która nastąpiła w efekcie autoinspekcji Zespołu Scrumowego. Mimo, że usprawnienia mogą być wprowadzane w dowolnym momencie, Retrospektywa Sprintu jest formalnym elementem Scruma, całkowicie skoncentrowanym na procesie inspekcji i adaptacji.
+
+
+Artefakty Scruma
+----------------
+
+Artefakty Scruma reprezentują pracę lub wartość, w celu uzyskania przejrzystości i stworzenia okazji do dokonania inspekcji i adaptacji. Są one zaprojektowane w taki sposób, by zwiększać dostępność i czytelność kluczowych informacji tak, by wszyscy zainteresowani rozumieli dany artefakt w taki sam sposób.
+
+### Backlog Produktu
+
+Backlog Produktu to uporządkowana lista wszystkiego, co w danym momencie wiadomo odnośnie rozwoju produktu. Stanowi jedyne źródło wymaganych zmian, które mają być w produkcie wprowadzone. Odpowiedzialnym za Backlog Produktu, w tym jego treść, dostępność i kolejność elementów, jest Właściciel Produktu.
+
+Backlog Produktu nigdy nie jest kompletny. Jego wczesna wersja nakreśla początkowo znane i najlepiej rozumiane wymagania. Backlog Produktu ewoluuje wraz z produktem i środowiskiem, w którym ten produkt będzie używany. Zmienia się dynamicznie, aby uwzględnić to, czego produkt wymaga, aby stać się odpowiednim, konkurencyjnym i użytecznym. Istnieje tak długo, jak istnieje produkt.
+
+Backlog Produktu jest listą wszystkich cech, funkcji, wymagań, ulepszeń i korekt, które reprezentują zmiany wprowadzane do produktu w jego przyszłych wydaniach. Elementy Backlogu Produktu posiadają następujące atrybuty: opis, kolejność, oszacowanie i wartość. Ponadto elementy Backlog Produktu często zawierają opis testu dowodzącego ich wykonanie i kompletność zgodnie z definicją „Ukończenia”.
+
+W miarę, jak produkt jest używany i nabiera wartości, a otoczenie rynkowe dostarcza informacji zwrotnej, Backlog Produktu staje się coraz większą i bardziej wyczerpującą listą. Wymagania nie przestają się zmieniać, więc Backlog Produktu jest żywym artefaktem. Zmiany w wymaganiach biznesowych, sytuacji rynkowej czy technologii mogą prowadzić do zmian w Backlogu Produktu.
+
+Często nad jednym produktem pracuje wspólnie kilka Zespołów Scrumowych. Także w takiej sytuacji do opisywania przyszłej pracy nad produktem używany jest jeden Backlog Produktu. W takich przypadkach może zostać zastosowany dodatkowy atrybut grupujący elementy Backlogu Produktu.
+
+Doskonalenie (ang. *refinement*) Backlogu Produktu jest działaniem polegającym na dodawaniu szczegółów, oszacowań i porządkowaniu elementów Backlogu Produktu. Jest to ciągły proces, podczas którego Właściciel Produktu wraz z Zespołem Deweloperskim opracowują szczegóły elementów Backlogu Produktu. Podczas doskonalenia Backlogu Produktu jego elementy są przeglądane i korygowane. To, jak i kiedy prowadzone jest doskonalenie, zależy od Zespołu Scrumowego. Doskonalenie zazwyczaj zajmuje nie więcej niż 10% czasu Zespołu Deweloperskiego w Sprincie. Nie zmienia to faktu, że elementy Backlogu Produktu mogą być uaktualniane w każdej chwili przez Właściciela Produktu lub za jego zgodą.
+
+Elementy Backlogu Produktu znajdujące się wyżej są zwykle klarowniejsze i posiadają więcej szczegółów niż te ulokowane niżej. W oparciu o zwiększoną czytelność i większą liczbę szczegółów przygotowywane są bardziej precyzyjne oszacowania; im niżej w Backlogu Produktu, tym mniej szczegółów. Elementy przewidziane na najbliższy Sprint mają taką wielkość i szczegółowość, by każdy z nich mógł być „Ukończony” w pojedynczym Sprincie. Elementy Backlogu Produktu, które mogą zostać „Ukończone” przez Zespół Deweloperski w pojedynczym Sprincie, uznawane są za „Przygotowane” do rozważenia podczas Planowania Sprintu. Elementy Backlogu Produktu zwykle osiągają taki poziom przejrzystości poprzez opisany powyżej proces doskonalenia.
+
+Zespół Deweloperski jest odpowiedzialny za wszystkie oszacowania. Właściciel Produktu może wpływać na Zespół Deweloperski pomagając dostrzegać kompromisy i dokonywać odpowiednich wyborów, ale ostatecznie pracę szacują osoby, które będą ją wykonywać.
+
+#### Monitorowanie postępów względem celu
+W dowolnym momencie powinno być możliwe podsumowanie całej pozostającej do wykonania pracy. Właściciel Produktu dokonuje takiego podsumowania przynajmniej podczas każdego Przeglądu Sprintu. Następnie porównuje tę ilość z ilością pracy sprzed rozpoczęcia Sprintu, określoną podczas poprzednich Przeglądów Sprintu, aby ocenić, jak kształtuje się postęp pracy i możliwość jej ukończenia zgodnie z założonym celem i w wyznaczonym czasie. Ocena ta jest prezentowana w przejrzysty sposób wszystkim interesariuszom.
+
+Do prognozowania postępów prac stosowane są różne sposoby monitorowania trendu takie jak: spalanie/wypalanie (ang. *burn-down/burn-up*) lub wykresy kumulatywne. Wszystkie są pomocne, jednak nie umniejszają znaczenia empiryzmu. W złożonych środowiskach to, co się wydarzy, pozostaje niewiadomą. Tylko to, co już się zdarzyło, może być wykorzystywane do podejmowania decyzji wybiegających w przyszłość.
+
+Backlog Sprintu
+---------------
+
+Backlog Sprintu to zbiór elementów Backlogu Produktu wybranych do Sprintu rozszerzony o plan dostarczenia Przyrostu produktu i realizacji Celu Sprintu. Poprzez Backlog Sprintu Zespół Deweloperski prognozuje, które funkcjonalności znajdą się w kolejnym Przyroście i jaką pracę należy wykonać, aby te funkcjonalności dostarczyć w postaci „Ukończonego” Przyrostu.
+
+Backlog Sprintu obrazuje całą pracę, którą Zespół Deweloperski uznaje za niezbędną do osiągnięcia Celu Sprintu. W celu zapewnienia procesu ciągłego doskonalenia się, Backlog Sprintu zawiera przynajmniej jedno istotne usprawnienie zidentyfikowane na poprzedniej Retrospektywie.
+
+Backlog Sprintu to plan wystarczająco szczegółowy, by postępy prac były zrozumiałe podczas Codziennego Scruma. Zespół Deweloperski modyfikuje Backlog Sprintu w czasie trwania całego Sprintu, tym samym „wyłania się” on podczas Sprintu. To wyłanianie się zachodzi w miarę jak Zespół Deweloperski realizuje plan i dowiaduje się coraz więcej na temat pracy, która jest potrzebna do osiągnięcia Celu Sprintu.
+
+Jeśli pojawia się potrzeba wykonania dodatkowej pracy, Zespół Deweloperski dodaje ją do Backlogu Sprintu. W miarę jak praca jest wykonywana albo kończona, aktualizowane jest oszacowanie pozostałej do wykonania pracy. Zbędne elementy planu są usuwane. Jedynie Zespół Deweloperski może zmieniać swój Backlog Sprintu w trakcie Sprintu. Backlog Sprintu jest dobrze widocznym, odpowiadającym rzeczywistości, tworzonym na bieżąco obrazem pracy, jaką Zespół Deweloperski planuje wykonać w trakcie Sprintu. Backlog Sprintu jest wyłączną własnością Zespołu Deweloperskiego.
+
+#### Monitorowanie postępów Sprintu
+W każdym momencie Sprintu cała pozostająca do wykonania praca z Backlogu Sprintu może zostać zsumowana. Zespół Deweloperski podsumowuje pozostałą do wykonania pracę przynajmniej raz dziennie – podczas Codziennego Scruma. Zespół Deweloperski obserwuje zmiany jej ilości każdego dnia Sprintu i na tej podstawie określa prawdopodobieństwo osiągnięcia Celu Sprintu. Poprzez codzienne monitorowanie pozostałej do wykonania pracy, Zespół Deweloperski zarządza postępami swojej pracy.
+
+### Przyrost
+
+Przyrost jest sumą wszystkich elementów Backlogu Produktu zakończonych podczas Sprintu i wartości Przyrostów ze wszystkich Sprintów poprzednich. Na koniec Sprintu nowy Przyrost musi być „Ukończony”, co oznacza, że musi on być gotowy do użycia i zgodny z definicją „Ukończenia” Zespołu Scrumowego. Przyrostem jest namacalny rezultat wykonanej pracy, podlegający empirycznej inspekcji na zakończenie Sprint. Reprezentuje on krok w kierunku wizji lub celu. Przyrost musi być gotowy do użycia niezależnie od tego, czy Właściciel Produktu decyduje się na jego wydanie.
+
+
+Przejrzystość Artefaktów
+------------------------
+
+Scrum opiera się na przejrzystości. Decyzje mające na celu optymalizację wartości i kontrolę ryzyka są podejmowane na podstawie obserwowanego stanu artefaktów. Solidna podstawa tych decyzji zależy od stopnia przejrzystości. Niepełna przejrzystość artefaktów może prowadzić do błędnych decyzji, obniżenia wartości i wzrostu ryzyka.
+
+Scrum Master musi pracować z Właścicielem Produktu, Zespołem Deweloperskim i pozostałymi zainteresowanymi stronami, aby ustalić czy artefakty są w pełni przejrzyste. Istnieje szereg sposobów radzenia sobie z brakiem pełnej przejrzystości i Scrum Master musi pomagać wszystkim w doborze praktyk najbardziej odpowiednich w takiej sytuacji. Scrum Master może identyfikować niepełną przejrzystość poddając artefakty inspekcji, będąc wyczulonym na powtarzalność zachowań i wydarzeń (ang. *sensing patterns*), słuchając uważnie tego, o czym się rozmawia oraz wyłapując różnice pomiędzy oczekiwanymi a rzeczywistymi wynikami.
+
+Zadaniem Scrum Mastera jest praca z Zespołem Scrumowym i całą organizacją w celu zwiększenia przejrzystości artefaktów. Praca ta polega zazwyczaj na dowiadywaniu się, przekonywaniu i powodowaniu zmiany. Przejrzystość nie pojawia się z dnia na dzień — jest drogą.
+
+### Definicja „Ukończenia”
+
+Kiedy element Backlogu Produktu albo Przyrost jest nazywany „Ukończonym”, wszyscy muszą rozumieć, co to właściwie oznacza. Mimo, że stan ten może różnić się znacznie pomiędzy Zespołami Scrumowymi, w celu zapewnienia przejrzystości wszyscy członkowie danego zespołu muszą mieć wspólne rozumienie, co oznacza stwierdzenie, że praca została ukończona. Tym właśnie jest definicja Ukończenia (ang. *definition of „Done”*) Zespołu Scrumowego, używana w ocenie, czy praca nad Przyrostem produktu jest wykonana.
+
+Ta sama definicja pomaga Zespołowi Deweloperskiemu w określeniu, ile elementów Backlogu Produktu może zostać wybranych podczas Planowania Sprintu. Celem każdego ze Sprintu jest dostarczenie Przyrostu gotowej do potencjalnego wydania funkcjonalności, zgodnie z aktualną definicją „Ukończenia” tego Zespołu Scrumowego.
+
+W każdym Sprincie Zespoły Deweloperskie dostarczają Przyrost funkcjonalności produktu. Przyrost ten musi być gotowy do użycia, żeby Właściciel Produktu mógł zdecydować o jego niezwłocznym wydaniu. Kiedy definicja „Ukończenia” Przyrostu jest elementem konwencji, standardów lub wytycznych stosowanych przez organizację wytwarzającą oprogramowanie, wszystkie Zespoły Scrumowe muszą traktować ją jako niezbędne minimum i się jej podporządkować.
+
+Jeśli natomiast definicja „Ukończenia” Przyrostu nie jest elementem standardu organizacji
+wytwarzającej oprogramowanie, Zespół Deweloperski musi opracować definicję  „Ukończenia” właściwą dla wytwarzanego produktu. Gdy nad wydaniem systemu lub produktu pracuje wiele Zespołów Scrumowych, wszystkie Zespoły Deweloperskie muszą wspólnie ustanowić definicję „Ukończenia”.
+
+Każdy Przyrost jest rozszerzeniem wszystkich poprzednich Przyrostów i jest dokładnie przetestowany w celu zapewnienia, że wszystkie one działają razem. W miarę jak Zespoły Scrumowe dojrzewają, oczekuje się, że ich definicja „Ukończenia” będzie zawierała coraz bardziej rygorystyczne kryteria zapewniania jeszcze wyższej jakości. Nowe wersje tej definicji mogą identyfikować pracę pozostającą do wykonania wobec poprzednio „Ukończonych” przyrostów. Każdy produkt lub system powinien posiadać definicję „Ukończenia”, która standaryzuje wykonywanie każdej pracy nad nim.
+
+
+Uwagi końcowe
+-------------
+
+Scrum jest ogólnodostępny, bezpłatny i jest oferowany za pośrednictwem tego Przewodnika. Role, artefakty, wydarzenia oraz reguły Scruma są niezmienne i choć możliwe jest wykorzystanie tylko niektórych jego elementów, wynikiem takiego postępowania nie będzie Scrum. Scrum istnieje tylko w swojej pełnej postaci i sprawdza się doskonale w roli ramy dla innych technik, metodyk czy praktyk.
+
+
+Wyrazy uznania
+--------------
+
+### Ludzie
+
+Spośród tysięcy osób, które przyczyniły się do powstania Scruma, należy wyróżnić tych, którzy byli kluczowi w początkowym okresie: Jeffa Sutherlanda współpracującego z Jeffem McKenną oraz Johnem Scumniotalesem, Kena Schwabera działającego wspólnie z Mikiem Smithem i Chrisem Martinem, i ich wszystkich pracujących razem. Wiele innych osób przyczyniło się do rozwoju Scruma w kolejnych latach. Bez ich pomocy nie przyjąłby on postaci znanej dzisiaj.
+
+### Historia
+
+Ken Schwaber i Jeff Sutherland pracowali nad Scrumem do 1995 roku, kiedy to wspólnie zaprezentowali go podczas konferencji OOPSLA. Prezentacja ta w znacznym stopniu udokumentowała wiedzę, którą Ken i Jeff nabyli stosując Scruma na przestrzeni kilku poprzednich lat i stanowi pierwszą formalną, publiczną definicję Scruma.
+
+Scrum ma za sobą długą historię, której nie będziemy tutaj przytaczać. Aby uhonorować miejsca, gdzie był początkowo stosowany i doskonalony, wymieńmy: Individual, Inc., Newspage, Fidelity Investments oraz IDX (obecnie GE Medical). Przewodnik po Scrumie dokumentuje Scruma w takiej postaci w jakiej został on stworzony i jest utrzymywany od ponad 20 lat przez Jeffa Sutherlanda i Kena Schwabera. Inne źródła dostarczają wzorców, procesów i pomysłów, które uzupełniają wytyczone przez Scruma ramy. Zwiększają one produktywność, wartość, kreatywność i dumę z wykonywanej pracy.
+
+### Tłumaczenie
+
+Niniejszy Przewodnik został przetłumaczony z wersji oryginalnej, opracowanej przez Kena Schwabera i Jeffa Sutherlanda. Do opracowania tłumaczenia aktualnej wersji przyczynili się: Tomek Włodarek (tomek@poddrzewem.pl), Michał Michałowski (m.michalow@gmail.com), Andrzej Zińczuk (azinczuk@gmail.com), Adam Michalczyk (tashisenge@gmail.com) i Bartosz Janowski (xebord@gmail.com). Obecne tłumaczenie powstało na bazie poprzednich wersji, w których przygotowaniu uczestniczyli Kate Terlecka, Bogdan Baraszkiewicz, Norbert Kołakowski i wiele innych osób.
+
+Wersje markdown, HTML, epub i mobi: Dominik Piekarczyk (piekarczyk@gmail.com)
+
+
+Zmiany w przewodniku pomiędzy wersjami 2016 a 2017
+--------------------------------------------------
+
+### 1. Dodano sekcję o zastosowaniach Scruma
+
+Początkowo Scrum został stworzony w celu zarządzania i wytwarzania produktów. Począwszy od wczesnych lat dziewięćdziesiątych był wykorzystywany powszechnie, na całym świecie, do:
+
+  1. odkrywania i identyfikowania rentowności rynków, technologii i potencjału produktów,
+  2. tworzenia i rozbudowy produktów,
+  3. wprowadzania na rynek produktów i ich rozszerzeń, nawet wielokrotnie każdego dnia,
+  4. rozwijania i utrzymywania środowisk typu cloud (online, bezpiecznych, dostępnych na żądanie) oraz innych środowisk operacyjnych do zastosowań produktowych,
+  5. utrzymywania i modernizacji produktów.
+
+Scrum był stosowany do rozwijania oprogramowania, sprzętu, oprogramowania wbudowanego (ang. *embedded*), sieci zintegrowanych usług i autonomicznych pojazdów. Znalazł swoje zastosowanie w szkolnictwie, administracji publicznej, marketingu, zarządzaniu operacjami w organizacjach – praktycznie każdej sferze codziennego życia.
+
+Każdego dnia Scrum udowadnia swoją przydatność w obliczu gwałtownie rosnącej złożoności technologii, zmian rynkowych, środowiska i zachodzących pomiędzy nimi interakcji. Scrum dowiódł swojej skuteczności w iteracyjnym i przyrostowym transferze wiedzy. Obecnie znajduje szerokie zastosowanie w rozwoju produktów, usług i w zarządzaniu organizacjami.
+
+Istotą Scruma jest niewielki zespół. Niezależny zespół jest wysoce elastyczny i potrafi sprawnie się dostosowywać. Te atuty sprawdzają się zarówno w przypadku pojedynczych zespołów, kilku współpracujących zespołów, wielu zespołów oraz sieci powiązanych ze sobą zespołów, które wykonują pracę, rozwijają, wydają na rynek i utrzymują efekty pracy tysięcy osób. Współpracują one i współdziałają ze sobą wykorzystując wyrafinowane środowiska i architektury systemowe.
+
+Słowa „rozwijać” (ang. *develop*) i „rozwijanie” (ang. *development*) są używanie w tym przewodniku w odniesieniu do złożonej pracy, której przykłady wymieniono powyżej.
+
+### 2. Zmieniono brzmienie sekcji opisującej rolę Scrum Mastera aby zwiększyć czytelność tej roli. Obecne brzmienie jest następujące:
+
+Scrum Master jest odpowiedzialny za promowanie i wspieranie stosowania Scruma tak, jak został on zdefiniowany w tym Przewodniku. Scrum Masterzy osiągają to poprzez pomaganie wszystkim w zrozumieniu teorii Scruma, jego praktyk, reguł i wartości.
+
+Scrum Master jest przywódcą służebnym (ang. *servant leader*) Zespołu Scrumowego. Scrum Master pomaga również osobom spoza Zespołu Scrumowego zrozumieć, które z ich interakcji z Zespołem Scrumowym są pomocne, a które nie. Scrum Master pomaga zmieniać te zachowania, aby maksymalizować wartość wytwarzaną przez Zespół Scrumowy.
+
+### 3. Dodano do sekcji opisującej wparcie Scrum Mastera dla Właściciela Produktu
+
+Scrum Master służy pomocą Właścicielowi Produktu w wielu aspektach, na przykład:
+
+  * zapewniając, że cele, zakres i domena produktowa są zrozumiałe dla wszystkich w Zespole Scrumowym, tak dobrze jak to tylko możliwe […]
+
+### 4. Zaktualizowano pierwszy paragraf sekcji opisującej Codziennego Scruma. Jego obecne brzmienie jest następujące:
+
+Codzienny Scrum jest wydarzeniem dla Zespołu Deweloperskiego, ograniczonym czasowo do piętnastu minut. Codzienny Scrum organizowany jest każdego dnia Sprintu. W jego trakcie Zespół Deweloperski planuje pracę na najbliższe dwadzieścia cztery godziny. W ten sposób, poprzez inspekcję pracy wykonanej od poprzedniego Codziennego Scruma, zespół optymalizuje współpracę i efektywność oraz prognozuje nadchodzącą pracę w Sprincie. W celu zredukowania złożoności Codzienny Scrum odbywa się codziennie w stałym miejscu i o stałej porze.
+
+### 5. Dodano następującą treść do sekcji opisującej Codziennego Scruma aby poprawić czytelność celów Codziennego Scruma:
+
+Przebieg spotkania jest ustalany przez Zespół Deweloperski. Może ono być przeprowadzane na wiele sposobów, jeśli tylko pozostaje poświęcone postępom prac w kierunku osiągnięcia Celu Sprintu. Niektóre Zespoły Deweloperskie wykorzystują pytania, inne prowadzą dyskusje. Oto przykład pytań, które mogą być wykorzystywane podczas tego spotkania:
+
+  * Co zrobiłem wczoraj, co pomogło Zespołowi Deweloperskiemu przybliżyć się do osiągnięcia Celu Sprintu?
+  * Co zrobię dzisiaj, co pomoże Zespołowi Deweloperskiemu przybliżyć się do osiągnięcia Celu Sprintu?
+  * Czy widzę jakiekolwiek przeszkody mogące uniemożliwić mi lub Zespołowi Deweloperskiemu osiągnięcie Celu Sprintu?
+
+### 6. Zwiększono czytelność definicji ograniczeń czasowych
+
+Zastosowano wyrażenia "maksymalnie" i "nie dłużej niż" aby wyjaśnić, że Wydarzenia mają oznaczoną górną granicę czasu trwania i mogą zakończyć się wcześniej.
+
+### 7. Dodano następującą treść do sekcji opisującej Backlog Sprintu
+
+W celu zapewnienia procesu ciągłego doskonalenia się, Backlog Sprintu zawiera przynajmniej jedno istotne usprawnienie zidentyfikowane na poprzedniej Retrospektywie.
+
+### 8. Poprawiono czytelność sekcji opisującej Przyrost
+
+Przyrostem jest namacalny rezultat wykonanej pracy, podlegający empirycznej inspekcji na zakończenie Sprint. Reprezentuje on krok w kierunku wizji lub celu.

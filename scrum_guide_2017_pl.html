@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>scrum_guide_2017_pl</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1,2em; color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); overflow: auto; }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1,2; margin-top: 1,5em; margin-bottom: 0,5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2,4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1,8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1,5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1,2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1,1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1,5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1,5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1,5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(75, 83, 98); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1,5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0,66em 1em; border: 1px solid rgb(75, 83, 98); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1,5em 0px; padding: 1em; font-size: 0,92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); border-image: initial; background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1,6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow: scroll; }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1,4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0,3em; font-size: 2,25em; line-height: 1,2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0,3em; font-size: 1,75em; line-height: 1,225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1,5em; line-height: 1,43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1,2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1,25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1,2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1,1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1,1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(204, 204, 204); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0,2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0,2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1,45; background-color: rgb(247, 247, 247); border-radius: 3px; }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; background-color: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; background-color: rgb(252, 252, 252); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-image: initial; border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0,8em 1em; margin-bottom: 1em; font-size: 0,85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item-checkbox { position: absolute; margin: 0,25em 0px 0px -1,4em; }
+.markdown-preview ul label { vertical-align: top; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+pre.editor-colors .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+pre.editor-colors .invisible {
+  color: #abb2bf;
+}
+pre.editor-colors .cursor {
+  border-left: 2px solid #528bff;
+}
+pre.editor-colors .selection .region {
+  background-color: #3e4451;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px solid #528bff;
+  box-sizing: border-box;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(171, 178, 191, 0.15);
+}
+pre.editor-colors .find-result .region.region.region,
+pre.editor-colors .current-result .region.region.region {
+  border-radius: 2px;
+  background-color: rgba(82, 139, 255, 0.24);
+  transition: border-color 0.4s;
+}
+pre.editor-colors .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+pre.editor-colors .current-result .region.region.region {
+  border: 2px solid #528bff;
+  transition-duration: .1s;
+}
+pre.editor-colors .gutter .line-number {
+  color: #636d83;
+  -webkit-font-smoothing: antialiased;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  color: #abb2bf;
+  background-color: #3a3f4b;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+pre.editor-colors .gutter .line-number .icon-right {
+  color: #abb2bf;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
+  bottom: -3px;
+}
+pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #abb2bf;
+}
+.syntax--comment {
+  color: #5c6370;
+  font-style: italic;
+}
+.syntax--comment .syntax--markup.syntax--link {
+  color: #5c6370;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #98c379;
+}
+.syntax--keyword {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--control {
+  color: #c678dd;
+}
+.syntax--keyword.syntax--operator {
+  color: #abb2bf;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #61afef;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #d19a66;
+}
+.syntax--storage {
+  color: #c678dd;
+}
+.syntax--storage.syntax--type.syntax--annotation,
+.syntax--storage.syntax--type.syntax--primitive {
+  color: #c678dd;
+}
+.syntax--storage.syntax--modifier.syntax--package,
+.syntax--storage.syntax--modifier.syntax--import {
+  color: #abb2bf;
+}
+.syntax--constant {
+  color: #d19a66;
+}
+.syntax--constant.syntax--variable {
+  color: #d19a66;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--numeric {
+  color: #d19a66;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #56b6c2;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #56b6c2;
+}
+.syntax--variable {
+  color: #e06c75;
+}
+.syntax--variable.syntax--interpolation {
+  color: #be5046;
+}
+.syntax--variable.syntax--parameter {
+  color: #abb2bf;
+}
+.syntax--string {
+  color: #98c379;
+}
+.syntax--string > .syntax--source,
+.syntax--string .syntax--embedded {
+  color: #abb2bf;
+}
+.syntax--string.syntax--regexp {
+  color: #56b6c2;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #e5c07b;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #e06c75;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #5c6370;
+}
+.syntax--punctuation.syntax--definition.syntax--method-parameters,
+.syntax--punctuation.syntax--definition.syntax--function-parameters,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--separator,
+.syntax--punctuation.syntax--definition.syntax--seperator,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #abb2bf;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #61afef;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #e5c07b;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #be5046;
+}
+.syntax--punctuation.syntax--section.syntax--method,
+.syntax--punctuation.syntax--section.syntax--class,
+.syntax--punctuation.syntax--section.syntax--inner-class {
+  color: #abb2bf;
+}
+.syntax--support.syntax--class {
+  color: #e5c07b;
+}
+.syntax--support.syntax--type {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function {
+  color: #56b6c2;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #e5c07b;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #61afef;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #e06c75;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #d19a66;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #61afef;
+}
+.syntax--meta.syntax--class {
+  color: #e5c07b;
+}
+.syntax--meta.syntax--class.syntax--body {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--method-call,
+.syntax--meta.syntax--method {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--definition.syntax--variable {
+  color: #e06c75;
+}
+.syntax--meta.syntax--link {
+  color: #d19a66;
+}
+.syntax--meta.syntax--require {
+  color: #61afef;
+}
+.syntax--meta.syntax--selector {
+  color: #c678dd;
+}
+.syntax--meta.syntax--separator {
+  color: #abb2bf;
+}
+.syntax--meta.syntax--tag {
+  color: #abb2bf;
+}
+.syntax--underline {
+  text-decoration: underline;
+}
+.syntax--none {
+  color: #abb2bf;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important;
+}
+.syntax--invalid.syntax--illegal {
+  color: white !important;
+  background-color: #e05252 !important;
+}
+.syntax--markup.syntax--bold {
+  color: #d19a66;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #c678dd;
+}
+.syntax--markup.syntax--deleted {
+  color: #e06c75;
+}
+.syntax--markup.syntax--italic {
+  color: #c678dd;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading {
+  color: #e06c75;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #61afef;
+}
+.syntax--markup.syntax--link {
+  color: #56b6c2;
+}
+.syntax--markup.syntax--inserted {
+  color: #98c379;
+}
+.syntax--markup.syntax--quote {
+  color: #d19a66;
+}
+.syntax--markup.syntax--raw {
+  color: #98c379;
+}
+.syntax--source.syntax--c .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cpp .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+  color: #c678dd;
+}
+.syntax--source.syntax--css .syntax--property-name,
+.syntax--source.syntax--css .syntax--property-value {
+  color: #828997;
+}
+.syntax--source.syntax--css .syntax--property-name.syntax--support,
+.syntax--source.syntax--css .syntax--property-value.syntax--support {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--source.syntax--embedded.syntax--source {
+  color: #abb2bf;
+}
+.syntax--source.syntax--elixir .syntax--constant.syntax--language,
+.syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
+.syntax--source.syntax--elixir .syntax--constant.syntax--definition {
+  color: #61afef;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--definition,
+.syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
+  color: #c678dd;
+}
+.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
+  color: #d19a66;
+  font-style: italic;
+}
+.syntax--source.syntax--elixir .syntax--quoted {
+  color: #98c379;
+}
+.syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--section,
+.syntax--source.syntax--elixir .syntax--embedded.syntax--source.syntax--empty {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--readwrite.syntax--module .syntax--punctuation {
+  color: #e06c75;
+}
+.syntax--source.syntax--elixir .syntax--regexp.syntax--section,
+.syntax--source.syntax--elixir .syntax--regexp.syntax--string {
+  color: #be5046;
+}
+.syntax--source.syntax--elixir .syntax--separator,
+.syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
+  color: #d19a66;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--constant {
+  color: #e5c07b;
+}
+.syntax--source.syntax--elixir .syntax--array,
+.syntax--source.syntax--elixir .syntax--scope,
+.syntax--source.syntax--elixir .syntax--section {
+  color: #828997;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--link .syntax--entity {
+  color: #61afef;
+}
+.syntax--source.syntax--go .syntax--storage.syntax--type.syntax--string {
+  color: #c678dd;
+}
+.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+  color: #e06c75;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--storage.syntax--type {
+  color: #e5c07b;
+}
+.syntax--source.syntax--java .syntax--keyword.syntax--operator.syntax--instanceof {
+  color: #c678dd;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+  color: #e06c75;
+}
+.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
+  color: #abb2bf;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator {
+  color: #56b6c2;
+}
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--delete,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--in,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--of,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--instanceof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--typeof,
+.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
+  color: #c678dd;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
+  color: #e06c75;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+  color: #98c379;
+}
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
+.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
+  color: #56b6c2;
+}
+.syntax--ng.syntax--interpolation {
+  color: #e06c75;
+}
+.syntax--ng.syntax--interpolation.syntax--begin,
+.syntax--ng.syntax--interpolation.syntax--end {
+  color: #61afef;
+}
+.syntax--ng.syntax--interpolation .syntax--function {
+  color: #e06c75;
+}
+.syntax--ng.syntax--interpolation .syntax--function.syntax--begin,
+.syntax--ng.syntax--interpolation .syntax--function.syntax--end {
+  color: #61afef;
+}
+.syntax--ng.syntax--interpolation .syntax--bool {
+  color: #d19a66;
+}
+.syntax--ng.syntax--interpolation .syntax--bracket {
+  color: #abb2bf;
+}
+.syntax--ng.syntax--pipe,
+.syntax--ng.syntax--operator {
+  color: #abb2bf;
+}
+.syntax--ng.syntax--tag {
+  color: #56b6c2;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--attribute-name {
+  color: #e5c07b;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string {
+  color: #c678dd;
+}
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--begin,
+.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--end {
+  color: #abb2bf;
+}
+.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
+  color: inherit;
+}
+.syntax--source.syntax--php .syntax--class.syntax--bracket {
+  color: #abb2bf;
+}
+.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
+  color: #c678dd;
+}
+.syntax--source.syntax--python .syntax--variable.syntax--parameter {
+  color: #d19a66;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h1 id="scrum-guide-">Scrum Guide™</h1>
+<p>Ta wersja Przewodnika Scrum w formacie HTML jest konwersją polskiego tłumaczenia wersji PDF z listopada 2017 <a href="http://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf">dostępnej w serwisie www.scrumguides.org</a>.</p>
+<h2 id="przewodnik-po-scrumie-regu-y-gry">Przewodnik po Scrumie: Reguły gry</h2>
+<p>Listopad 2017</p>
+<p><em>Przygotowany i utrzymywany przez twórców Scruma: Kena Schwabera i Jeffa Sutherlanda</em></p>
+<p><strong>WERSJA JĘZYKOWA POLSKA/ POLISH</strong></p>
+<h2 id="cel-przewodnika">Cel przewodnika</h2>
+<p>Scrum to ramy postępowania przydatne w procesach wytwarzania, dostarczania i
+utrzymywania złożonych produktów. Ten Przewodnik zawiera definicję Scruma, na którą
+składają się: role, wydarzenia, artefakty i zestaw reguł, które łączą te elementy w jedną całość.
+Scrum został stworzony przez Kena Schwabera i Jeffa Sutherlanda. To oni są autorami tego
+przewodnika i razem wspierają zawarte w nim przesłanie.</p>
+<h2 id="definicja-scruma">Definicja Scruma</h2>
+<p>Scrum (rzecz.): ramy postępowania (ang. <em>framework</em>), dzięki którym ludzie mogą adaptacyjnie rozwiązywać złożone problemy tak, by w produktywny i kreatywny sposób wytwarzać produkty o najwyższej możliwej wartości.</p>
+<p>Scrum jest:</p>
+<ul>
+<li>lekki,</li>
+<li>łatwy do zrozumienia,</li>
+<li>trudny do opanowania.</li>
+</ul>
+<p>Scrum to ramy postępowania, które są wykorzystywane w zarządzaniu wytwarzaniem złożonych produktów od początku lat dziewięćdziesiątych. Scrum nie jest procesem czy techniką wytwórczą, czy też wyczerpującym opisem sposobu działania. Definiuje jedynie ogólne reguły postępowania, w obrębie których możliwe jest stosowanie różnego rodzaju procesów i technik. Scrum obnaża względną skuteczność wykorzystywanych metod zarządzania produktem i sposobów wykonywania pracy tak, by można było w sposób ciągły doskonalić produkt, zespół oraz środowisko pracy.</p>
+<p>Na Scruma składają się: Zespoły Scrumowe (ang. <em>Scrum Teams</em>) oraz związane z nimi role,
+wydarzenia, artefakty (ang. <em>artifacts</em>) i reguły. Każdy z elementów służy konkretnym celom i każdy jest niezbędny do osiągnięcia sukcesu w stosowaniu Scruma.</p>
+<p>Reguły Scruma łączą ze sobą wydarzenia, role i artefakty, definiując powiązania i relacje
+pomiędzy nimi. Zostały one opisane w tym dokumencie.</p>
+<p>Poszczególne zastosowania Scruma mogą się między sobą różnić i z tego względu wykraczają
+poza zakres tego przewodnika.</p>
+<h2 id="zastosowanie-scruma">Zastosowanie Scruma</h2>
+<p>Początkowo Scrum został stworzony w celu zarządzania i wytwarzania produktów.</p>
+<p>Począwszy od wczesnych lat dziewięćdziesiątych był wykorzystywany powszechnie, na całym
+świecie, do:</p>
+<ol>
+<li>odkrywania i identyfikowania rentowności rynków, technologii i potencjału
+produktów,</li>
+<li>tworzenia i rozbudowy produktów,</li>
+<li>wprowadzania na rynek produktów i ich rozszerzeń, nawet wielokrotnie każdego
+dnia,</li>
+<li>rozwijania i utrzymywania środowisk typu cloud (online, bezpiecznych, dostępnych
+na żądanie) oraz innych środowisk operacyjnych do zastosowań produktowych,</li>
+<li>utrzymywania i modernizacji produktów.</li>
+</ol>
+<p>Scrum był stosowany do rozwijania oprogramowania, sprzętu, oprogramowania
+wbudowanego (ang. <em>embedded</em>), sieci zintegrowanych usług i autonomicznych pojazdów.
+Znalazł swoje zastosowanie w szkolnictwie, administracji publicznej, marketingu, zarządzaniu operacjami w organizacjach – praktycznie każdej sferze codziennego życia.</p>
+<p>Każdego dnia Scrum udowadnia swoją przydatność w obliczu gwałtownie rosnącej złożoności
+technologii, zmian rynkowych, środowiska i zachodzących pomiędzy nimi interakcji.</p>
+<p>Scrum dowiódł swojej skuteczności w iteracyjnym i przyrostowym transferze wiedzy.
+Obecnie znajduje szerokie zastosowanie w rozwoju produktów, usług i w zarządzaniu
+organizacjami.</p>
+<p>Istotą Scruma jest niewielki zespół. Niezależny zespół jest wysoce elastyczny i potrafi
+sprawnie się dostosowywać. Te atuty sprawdzają się zarówno w przypadku pojedynczych
+zespołów, kilku współpracujących zespołów, wielu zespołów oraz sieci powiązanych ze sobą
+zespołów, które wykonują pracę, rozwijają, wydają na rynek i utrzymują efekty pracy tysięcy
+osób. Współpracują one i współdziałają ze sobą wykorzystując wyrafinowane środowiska i
+architektury systemowe.</p>
+<p>Słowa „rozwijać” (ang. <em>develop</em>) i „rozwijanie” (ang. <em>development</em>) są używanie w tym
+przewodniku w odniesieniu do złożonej pracy, której przykłady wymieniono powyżej.</p>
+<h2 id="teoria-scruma">Teoria Scruma</h2>
+<p>Scrum został osadzony w teorii empirycznej kontroli procesu, lub — krócej — w teorii
+empiryzmu. Empiryzm reprezentuje pogląd, iż wiedza wynika z <em>doświadczania i
+podejmowania decyzji</em> w oparciu o to, co zostało poznane. Scrum wykorzystuje podejście
+iteracyjne i przyrostowe w celu zwiększenia przewidywalności i lepszej kontroli ryzyka.</p>
+<p>Empiryczna kontrola procesu opiera się na trzech filarach: przejrzystości, inspekcji i adaptacji.</p>
+<h3 id="przejrzysto-">Przejrzystość</h3>
+<p>Wszystkie istotne aspekty procesu muszą być widoczne dla osób odpowiedzialnych za
+osiągane rezultaty. Reguła przejrzystości wymaga, by aspekty te były opisane wspólnymi dla
+osób zaangażowanych standardami, tak by wszyscy obserwatorzy tak samo rozumieli to, co
+obserwują.</p>
+<p>Przykładowo:</p>
+<ul>
+<li>uczestnicy danego procesu muszą posługiwać się wspólnym nazewnictwem elementów tego procesu,</li>
+<li>osoby wykonujące pracę i osoby akceptujące wyniki tej pracy muszą posługiwać się
+wspólną definicją „Ukończonej” (ang. <em>"Done"</em>) pracy.</li>
+</ul>
+<h3 id="inspekcja">Inspekcja</h3>
+<p>Osoby wykorzystujące Scruma muszą poddawać częstej inspekcji artefakty scrumowe oraz postępy w realizacji Celu Sprintu (ang. <em>Sprint Goal</em>), celem wykrycia niepożądanych rozbieżności. Inspekcja nie powinna jednak być zbyt częsta, by nie stanowiła przeszkody w wykonywaniu pracy. Inspekcje przynoszą najwięcej korzyści, gdy są sumiennie przeprowadzane przez wykwalifikowanych inspektorów bezpośrednio w miejscu, w którym wykonywana jest praca.</p>
+<h3 id="adaptacja">Adaptacja</h3>
+<p>Jeżeli osoba dokonująca inspekcji ustali, że jeden lub więcej aspektów procesu wykracza poza
+przyjęte limity oraz że wytwarzany w ten sposób produkt nie będzie akceptowalny, proces lub
+przetwarzany materiał muszą zostać skorygowane. Korekta musi być wykonana jak najszybciej, by ograniczyć dalsze odstępstwa.</p>
+<p>Scrum przewiduje cztery formalne punkty przeprowadzania inspekcji i okazje do dokonania
+adaptacji (korekty). Wszystkie te punkty zostały opisane w sekcji Wydarzenia w Scrumie:</p>
+<ul>
+<li>Planowanie Sprintu (ang. <em>Sprint Planning</em>)</li>
+<li>Codzienny Scrum (ang. <em>Daily Scrum</em>)</li>
+<li>Przegląd Sprintu (ang. <em>Sprint Review</em>)</li>
+<li>Retrospektywa Sprintu (ang. <em>Sprint Retrospective</em>)</li>
+</ul>
+<h2 id="warto-ci-scruma">Wartości Scruma</h2>
+<p>Zespół Scrumowy przyjmując wartości zaangażowania, odwagi, skupienia, otwartości i poszanowania i postępując zgodnie z nimi, powołuje do życia filary Scruma – przejrzystość, inspekcja i adaptacja, tworząc atmosferę zaufania pomiędzy wszystkimi współpracującymi osobami. Członkowie Zespołu Scrumowego odkrywają te wartości i uczą się ich, pracując z wydarzeniami, rolami i artefaktami Scruma.</p>
+<p>Powodzenie w wykorzystaniu Scruma zależy od biegłości w postępowaniu zgodnie z tymi pięcioma wartościami. Wszyscy osobiście zobowiązują się osiągać cele Zespołu Scrumowego. Członkowie Zespołu Scrumowego mają odwagę postępować właściwie i przezwyciężać trudności. Wszyscy skupiają się na pracy w Sprincie i celach Zespołu Scrumowego. Zespół Scrumowy i jego interesariusze zgadzają się pozostawać otwartymi na wszystkie aspekty wykonywanej pracy i związane z nią wyzwania. Członkowie Zespołu Scrumowego wzajemnie respektują swoje prawo do bycia niezależnymi, kompetentnymi ludźmi.</p>
+<h2 id="zesp-scrumowy">Zespół Scrumowy</h2>
+<p>W skład Zespołu Scrumowego wchodzą: Właściciel Produktu (ang. <em>Product Owner</em>), Zespół Deweloperski (ang. <em>Development Team</em>) oraz Scrum Master. Zespoły Scrumowe są samoorganizujące się i międzyfunkcjonalne (ang. <em>cross-functional</em>). Samoorganizujące się zespoły samodzielnie decydują, w jaki sposób najlepiej wykonywać pracę, nie będąc przy tym kierowanymi przez osoby spoza zespołu. Zespoły międzyfunkcjonalne posiadają wszelkie kompetencje niezbędne do ukończenia pracy, nie będąc zależnymi od osób nienależących do zespołu. Model zespołu proponowany w Scrumie został zaprojektowany tak, aby zoptymalizować elastyczność, kreatywność i produktywność. Taki model Zespołu Scrumowego dowiódł swojej rosnącej skuteczności w wymienionych uprzednio przypadkach oraz każdym innym rodzaju złożonej pracy.</p>
+<p>Zespoły Scrumowe dostarczają produkty iteracyjnie i przyrostowo, zwiększając szanse na
+uzyskanie informacji zwrotnej. Przyrostowe dostarczanie „Ukończonego” produktu zapewnia
+nieprzerwaną dostępność jego działającej, potencjalnie użytecznej wersji.</p>
+<h2 id="w-a-ciciel-produktu">Właściciel Produktu</h2>
+<p>Właściciel Produktu jest odpowiedzialny za maksymalizację wartości produktu i pracy Zespołu Deweloperskiego. Sposoby osiągania tego celu mogą się znacznie różnić pomiędzy organizacjami, Zespołami Scrumowymi i poszczególnymi osobami.</p>
+<p>Właściciel Produktu jest jedyną osobą odpowiedzialną za zarządzanie Backlogiem Produktu
+(ang. <em>Product Backlog</em>). Pojęcie zarządzania Backlogiem Produktu mieści w sobie:</p>
+<ul>
+<li>jasne artykułowanie elementów Backlogu Produktu,</li>
+<li>porządkowanie kolejności elementów Backlogu Produktu w sposób pozwalający jak najlepiej osiągać założone cele i misje,</li>
+<li>optymalizowanie wartości pracy wykonywanej przez Zespół Deweloperski,</li>
+<li>zapewnianie, że Backlog Produktu jest dostępny, przejrzysty i jasny dla wszystkich, a także opisuje to, czym Zespół Scrumowy będzie się zajmował w dalszej kolejności,</li>
+<li>zapewnianie, że Zespół Deweloperski rozumie elementy Backlogu Produktu w wymaganym stopniu.</li>
+</ul>
+<p>Właściciel Produktu może wykonywać powyższe zadania samodzielnie lub zlecać je Zespołowi Deweloperskiemu, jednak to Właściciel Produktu pozostaje za nie odpowiedzialny. Właściciel Produktu to pojedyncza osoba, nie komitet.</p>
+<p>Właściciel Produktu może reprezentować interesy grupy osób, lecz osoby chcące zmienić priorytet elementu Backlogu Produktu, muszą zwrócić się do Właściciela Produktu.</p>
+<p>Aby Właściciel Produktu mógł odnieść sukces, cała organizacja musi respektować jego decyzje. Decyzje te są odzwierciedlone w treści i kolejności elementów Backlogu Produktu. Nikt nie może nakazać Zespołowi Deweloperskiemu, aby pracował z innym zestawem wymagań.</p>
+<h2 id="zesp-deweloperski">Zespół Deweloperski</h2>
+<p>Zespół Deweloperski złożony jest z profesjonalistów, których zadaniem jest dostarczenie, na zakończenie każdego Sprintu, „Ukończonego” i gotowego do potencjalnego wydania Przyrostu (ang. <em>Increment</em>) produktu. „Ukończony” Przyrost jest wymagany podczas Przeglądu Sprintu (ang. <em>Sprint Review</em>). Tylko członkowie Zespołu Deweloperskiego tworzą Przyrost.</p>
+<p>Zespoły Deweloperskie są ustanowione i uprawnione przez organizację do samodzielnego organizowania własnej pracy i zarządzania nią. Synergia będąca rezultatem takiego postępowania zwiększa ogólną wydajność i efektywność Zespołu Deweloperskiego.</p>
+<p>Charakterystyka Zespołów Deweloperskich jest następująca:</p>
+<ul>
+<li>Są samoorganizujące się. Nikt (nawet Scrum Master) nie może mówić Zespołowi Deweloperskiemu, jak przekształcać elementy Backlogu Produktu w Przyrosty gotowej do potencjalnego wydania funkcjonalności.</li>
+<li>Zespoły Deweloperskie są międzyfunkcjonalne, w swoim składzie posiadają wszystkie umiejętności niezbędne do wytworzenia Przyrostu produktu.</li>
+<li>Scrum nie wyróżnia nazw ról członków Zespołu Deweloperskiego, bez względu na charakter wykonywanej przez nich pracy.</li>
+<li>Scrum nie wyróżnia podzespołów w Zespole Deweloperskim, niezależnie od rodzaju wykonywanych zadań — na przykład testowania, tworzenia architektury, operacji czy analizy biznesowej.</li>
+<li>Mimo, iż pojedynczy członkowie Zespołu Deweloperskiego mogą posiadać wyspecjalizowane umiejętności i mogą skupiać się na konkretnych dziedzinach, odpowiedzialność za wykonywaną pracę ponosi cały Zespół Deweloperski.</li>
+</ul>
+<h3 id="wielko-zespo-u-deweloperskiego">Wielkość Zespołu Deweloperskiego</h3>
+<p>Zespół Deweloperski powinien być na tyle mały, by pozostał zwinnym i jednocześnie wystarczająco liczny, żeby mógł wykonać znaczącą pracę w ramach Sprintu. Mniej niż troje członków oznacza mniejszy stopień interakcji i niższy wzrost produktywności. Mniejsze Zespoły Deweloperskie mogą napotykać w trakcie Sprintu braki kompetencji uniemożliwiające im dostarczanie Przyrostu gotowego do potencjalnego wydania. Więcej niż dziewięcioro członków wymaga zbyt dużych nakładów na koordynację. W dużych Zespołach Deweloperskich poziom złożoności jest tak wysoki, że stosowanie procesu empirycznego przestaje być użyteczne. Osoby Właściciela Produktu i Scrum Mastera nie są wliczane w podane wyżej wartości, chyba że wykonują one jednocześnie pracę wynikającą z Backlogu Sprintu (ang. <em>Sprint Backlog</em>).</p>
+<h2 id="scrum-master">Scrum Master</h2>
+<p>Scrum Master jest odpowiedzialny za promowanie i wspieranie stosowania Scruma tak, jak został on zdefiniowany w tym Przewodniku. Scrum Masterzy osiągają to poprzez pomaganie wszystkim w zrozumieniu teorii Scruma, jego praktyk, reguł i wartości.</p>
+<p>Scrum Master jest przywódcą służebnym (ang. <em>servant leader</em>) Zespołu Scrumowego. Scrum Master pomaga również osobom spoza Zespołu Scrumowego zrozumieć, które z ich interakcji z Zespołem Scrumowym są pomocne, a które nie. Scrum Master pomaga zmieniać te zachowania, aby maksymalizować wartość wytwarzaną przez Zespół Scrumowy.</p>
+<h3 id="jak-scrum-master-wspiera-w-a-ciciela-produktu-">Jak Scrum Master wspiera Właściciela Produktu?</h3>
+<p>Scrum Master służy pomocą Właścicielowi Produktu w wielu aspektach, na przykład:</p>
+<ul>
+<li>zapewniając, że cele, zakres i domena produktowa są zrozumiałe dla wszystkich w Zespole Scrumowym, tak dobrze jak to tylko możliwe,</li>
+<li>znajdując techniki efektywnego zarządzania Backlogiem Produktu,</li>
+<li>pomagając Zespołowi Scrumowemu zrozumieć potrzebę formułowania jasnych i zwięzłych elementów Backlogu Produktu,</li>
+<li>w rozumieniu zasad planowania produktu w środowisku empirycznym,</li>
+<li>zapewniając, że Właściciel Produktu wie, jak porządkować Backlog Produktu, aby maksymalizować wartość,</li>
+<li>w rozumieniu i praktykowaniu zwinności (ang. <em>agility</em>),</li>
+<li>wspomagając przebieg wydarzeń scrumowych, kiedy jest to konieczne lub kiedy jest o to proszony.</li>
+</ul>
+<h3 id="jak-scrum-master-wspiera-zesp-deweloperski-">Jak Scrum Master wspiera Zespół Deweloperski?</h3>
+<p>Scrum Master służy pomocą Zespołowi Deweloperskiemu na kilka sposobów, na przykład:</p>
+<ul>
+<li>coachując Zespół Deweloperski w zakresie wykorzystania zasad samoorganizacji i międzyfunkcyjności,</li>
+<li>pomagając Zespołowi Deweloperskiemu tworzyć produkty wysokiej wartości,</li>
+<li>usuwając przeszkody ograniczające postępy Zespołu Deweloperskiego,</li>
+<li>wspomagając przebieg wydarzeń scrumowych, kiedy jest to konieczne lub kiedy jest o to proszony,</li>
+<li>coachując Zespół Deweloperski w zakresie sposobu wykonywania pracy w organizacjach, w których Scrum nie jest jeszcze w pełni przyjęty i rozumiany.</li>
+</ul>
+<h3 id="jak-scrum-master-wspiera-organizacj-">Jak Scrum Master wspiera organizację?</h3>
+<p>Scrum Master służy pomocą całej organizacji na kilka sposobów, na przykład:</p>
+<ul>
+<li>przewodząc procesom wdrażania Scruma oraz prowadząc coaching osób w ten proces zaangażowanych,</li>
+<li>planując wykorzystanie Scruma wewnątrz organizacji,</li>
+<li>wspierając pracowników i interesariuszy w zrozumieniu i stosowaniu Scruma oraz empirycznego podejścia do rozwoju produktu,</li>
+<li>powodując zmiany prowadzące do zwiększania produktywności Zespołu Scrumowego,</li>
+<li>współpracując z innymi Scrum Masterami w celu zwiększenia efektywności wykorzystania Scruma w organizacji.</li>
+</ul>
+<h2 id="wydarzenia-w-scrumie">Wydarzenia w Scrumie</h2>
+<p>Wydarzenia (ang. <em>events</em>) opisane w Scrumie są używane do wprowadzenia regularności i ograniczenia potrzeby organizowania innych, nieujętych w Scrumie spotkań. Wszystkie wydarzenia w Scrumie są ograniczone czasowo (ang. <em>timebox</em>), co oznacza, że mają ustalony maksymalny czas trwania. Po rozpoczęciu Sprintu jego czas trwania jest stały – nie może być skracany ani wydłużany. Pozostałe wydarzenia mogą zakończyć się, kiedy ich cel zostanie osiągnięty, co zapewnia właściwe wykorzystanie czasu i zapobiega wkradaniu się marnotrawstwa w proces.</p>
+<p>Poza Sprintem, który zawiera w sobie pozostałe wydarzenia, każde ze wydarzeń w Scrumie jest formalną okazją do przeprowadzenia celowej inspekcji i dokonania adaptacji. Wydarzenia w Scrumie są specjalnie zaprojektowane w taki sposób, aby zapewnić niezbędną przejrzystość i umożliwić inspekcję. Nieuwzględnienie któregokolwiek z nich redukuje przejrzystość i jest utraconą szansą na dokonanie inspekcji i adaptacji.</p>
+<h3 id="sprint">Sprint</h3>
+<p>Sercem Scruma jest Sprint — ograniczony czasowo do maksymalnie jednego miesiąca, podczas którego wytwarzany jest „Ukończony”, gotowy do użycia i potencjalnego wydania Przyrost produktu. Sprinty zachowują możliwie stały czas trwania przez cały okres realizowania prac. Nowy Sprint rozpoczyna się bezpośrednio po zakończeniu poprzedniego.</p>
+<p>Sprinty zawierają i składają się z Planowania Sprintu, Codziennych Scrumów, pracy wytwórczej, Przeglądu Sprintu i Retrospektywy Sprintu.</p>
+<p>Podczas Sprintu:</p>
+<ul>
+<li>nie są wprowadzane zmiany stanowiące zagrożenie dla realizacji Celu Sprintu,</li>
+<li>cele jakościowe nie są obniżane,</li>
+<li>zakres prac, wraz ze zdobywaniem nowych informacji, może być wyjaśniany i renegocjowany pomiędzy Właścicielem Produktu a Zespołem Deweloperskim.</li>
+</ul>
+<p>Każdy Sprint może być postrzegany jako projekt sięgający nie dalej niż miesiąc w przód. Jak każdy projekt, Sprint używany jest do osiągnięcia jakiegoś celu. Z każdym Sprintem związany jest opis tego, co należy zbudować, projekt oraz elastyczny plan wykonywania prac prowadzących do powstania oczekiwanego przyrostu produktu.</p>
+<p>Czas trwania Sprintu jest ograniczony do jednego miesiąca kalendarzowego. Jeśli horyzont zakończenia Sprintu jest zbyt odległy, może zmienić się definicja tego, co ma zostać zbudowane, może zwiększyć się złożoność oraz wzrosnąć ryzyko. Sprinty wprowadzają przewidywalność, zapewniając, że proces inspekcji i adaptacji w kierunku osiągnięcia Celu Sprintu będzie zachodził przynajmniej co miesiąc. Ponadto Sprinty ograniczają ryzyko do kosztu jednego miesiąca kalendarzowego.</p>
+<h4 id="przerywanie-sprintu">Przerywanie Sprintu</h4>
+<p>Sprint może zostać przerwany przed upływem ograniczenia czasowego. Tylko Właściciel Produktu ma prawo przerwać Sprint, jednak może podjąć taką decyzję pod wpływem opinii interesariuszy, Zespołu Deweloperskiego lub Scrum Mastera.</p>
+<p>Sprint może zostać przerwany, jeśli Cel Sprintu się zdezaktualizuje. Może tak się stać, gdy firma zmieni kierunek rozwoju lub gdy zmienią się uwarunkowania rynkowe lub technologiczne. Ogólnie rzecz ujmując Sprint powinien zostać przerwany, jeśli kontynuowanie prac nie ma sensu w zaistniałych okolicznościach. Jednak ze względu na krótki czas trwania Sprintów ich przerywanie rzadko jest sensowne.</p>
+<p>Kiedy Sprint jest przerywany, wszystkie wykonane i „Ukończone” elementy Backlogu Produktu są przeglądane. Jeśli część tej pracy nadaje się do potencjalnego wydania, Właściciel Produktu zwykle ją zatwierdza. Wszystkie nieukończone elementy Backlogu Produktu są ponownie szacowane i zwracane do Backlogu Produktu. Praca na nich wykonana szybko się dewaluuje i z tego względu musi być regularnie powtórnie szacowana.</p>
+<p>Przerwanie Sprintu zużywa zasoby, ponieważ wszyscy muszą się przegrupować podczas kolejnego Planowania Sprintu, aby móc rozpocząć nowy Sprint. Przerwania Sprintów są zwykle traumatyczne dla Zespołu Scrumowego i zachodzą bardzo rzadko.</p>
+<h3 id="planowanie-sprintu">Planowanie Sprintu</h3>
+<p>Praca przeznaczona do wykonania w Sprincie jest planowana podczas Planowania Sprintu. Plan ten powstaje w efekcie wspólnej pracy członków Zespołu Scrumowego.</p>
+<p>Planowanie Sprintu jest wydarzeniem ograniczonym do ośmiu godzin w przypadku miesięcznego Sprintu. Dla krótszych Sprintów jest ono zwykle krótsze. Rolą Scrum Mastera jest zapewnienie, że Planowanie Sprintu się odbywa i jego uczestnicy rozumieją cel tego wydarzenia. Scrum Master uczy Zespół Scrumowy utrzymywać je w wyznaczonych ramach czasowych.</p>
+<p>Planowanie Sprintu daje odpowiedź na następujące pytania:</p>
+<ul>
+<li>Co może zostać dostarczone w ramach Przyrostu mającego być rezultatem nadchodzącego Sprintu?</li>
+<li>W jaki sposób praca, niezbędna do dostarczenia Przyrostu, będzie wykonana?</li>
+</ul>
+<h4 id="temat-pierwszy-co-mo-e-zosta-zrobione-w-sprincie-">Temat pierwszy: Co może zostać zrobione w Sprincie?</h4>
+<p>Zespół Deweloperski prognozuje zakres prac, który zostanie zrealizowany w trakcie Sprintu. Właściciel Produktu omawia założenia Sprintu i te elementy Backlogu Produktu, których realizacja w trakcie Sprintu pozwoli na osiągnięcie Celu Sprintu. Cały Zespół Scrumowy wspólnie pracuje nad zrozumieniem pracy będącej zakresem Sprintu.</p>
+<p>Planowanie Sprintu oparte jest na Backlogu Produktu, ostatnim Przyroście produktu, przewidywanych możliwościach Zespołu Deweloperskiego w Sprincie oraz poprzednich rezultatach Zespołu Deweloperskiego. Decyzja o liczbie elementów Backlogu Produktu pobranych do Sprintu należy tylko i wyłącznie do Zespołu Deweloperskiego. Tylko Zespół Deweloperski może ocenić, co jest w stanie osiągnąć w nadchodzącym Sprincie.</p>
+<p>W trakcie planowania Sprintu Zespół Scrumowy tworzy także Cel Sprintu. Jest to zamierzenie, które zostanie osiągnięte w ramach Sprintu poprzez implementację wybranych elementów Backlogu Produktu. Cel Sprintu pomaga Zespołowi Deweloperskiemu zrozumieć, w jakim celu będzie on tworzyć Przyrost.</p>
+<h4 id="temat-drugi-w-jaki-spos-b-praca-zostanie-wykonana-">Temat drugi: W jaki sposób praca zostanie wykonana?</h4>
+<p>Po określeniu Celu Sprintu oraz wybraniu elementów Backlogu Produktu do Sprintu Zespół Deweloperski decyduje, w jaki sposób zostaną one podczas Sprintu przekształcone w „Ukończony” Przyrost produktu. Wybrane elementy Backlogu Produktu wraz z planem ich dostarczenia nazywane są Backlogiem Sprintu.</p>
+<p>Zespół Deweloperski zwykle rozpoczyna od projektowania systemu i zarysowania prac niezbędnych do przekształcenia elementów Backlogu Produktu w działający Przyrost produktu. Praca może ostatecznie odbiegać od planu pod względem ilości lub szacowanej pracochłonności. Niemniej podczas Planowania Sprintu Zespół Deweloperski rozplanowuje swoje działania w stopniu dającym mu możliwość prognozowania, co może zostać zrealizowane w nadchodzącym Sprincie. W trakcie tego spotkania praca planowana na pierwsze dni Sprintu jest rozpisywana na mniejsze porcje, często nie większe niż jeden dzień roboczy. Zespół Deweloperski samodzielnie organizuje się pod kątem wykonania pracy wynikającej z Backlogu Sprintu, zarówno podczas Planowania Sprintu, jak i zgodnie z potrzebami w trakcie Sprintu.</p>
+<p>Właściciel Produktu może pomóc wyjaśniać wybrane elementy Backlogu Produktu i osiągać kompromisy. Jeśli Zespół Deweloperski ustali, że ma za dużo lub za mało pracy, może renegocjować wybrane elementy Backlogu Produktu z Właścicielem Produktu. Zespół Deweloperski może także zaprosić na to spotkanie inne osoby, aby wsparły Zespół wiedzą techniczną lub domenową.</p>
+<p>Zanim Planowanie Sprintu dobiegnie końca, Zespół Deweloperski powinien być w stanie wytłumaczyć Właścicielowi Produktu i Scrum Masterowi, w jaki sposób ma zamiar pracować, organizując się samodzielnie, by osiągnąć Cel Sprintu i wytworzyć oczekiwany Przyrost.</p>
+<h4 id="cel-sprintu">Cel Sprintu</h4>
+<p>Cel Sprintu to założenie, które ma zostać spełnione w ramach Sprintu poprzez implementację wybranych elementów Backlogu Produktu. Dostarcza on Zespołowi Deweloperskiemu wskazówek w jakim celu tworzony jest Przyrost. Jest on definiowany podczas Planowania Sprintu. Cel Sprintu daje Zespołowi Deweloperskiemu pewną swobodę co do sposobu, w jaki dana funkcjonalność zostanie zaimplementowana. Zazwyczaj wybrane elementy Backlogu Sprintu stanowią spójną funkcję systemu, która może stać się Celem Sprintu. Celem Sprintu może także być cokolwiek, co zapewni spójność i spowoduje, że członkowie Zespołu Deweloperskiego będą pracowali razem, a nie nad odrębnymi inicjatywami.</p>
+<p>W trakcie Sprintu Zespół Deweloperski pamięta o Celu Sprintu. Aby go osiągnąć, wprowadza nowe funkcjonalności i wdraża nowe technologie. Jeśli podczas Sprintu charakter prac okazuje się inny niż oczekiwał Zespół Deweloperski, Zespół Deweloperski podejmuje współpracę z Właścicielem Produktu, aby renegocjować zakres Backlogu Sprintu.</p>
+<h3 id="codzienny-scrum">Codzienny Scrum</h3>
+<p>Codzienny Scrum jest wydarzeniem dla Zespołu Deweloperskiego, ograniczonym czasowo do piętnastu minut. Codzienny Scrum organizowany jest każdego dnia Sprintu. W jego trakcie Zespół Deweloperski planuje pracę na najbliższe dwadzieścia cztery godziny. W ten sposób, poprzez inspekcję pracy wykonanej od poprzedniego Codziennego Scruma, zespół optymalizuje współpracę i efektywność oraz prognozuje nadchodzącą pracę w Sprincie. W celu zredukowania złożoności Codzienny Scrum odbywa się codziennie w stałym miejscu i o stałej porze.</p>
+<p>Zespół Deweloperski używa Codziennych Scrumów do oceny postępów prac nad realizacją Celu Sprintu i trendu względem ukończenia pracy opisanej w Backlogu Sprintu. Codzienny Scrum zwiększa szanse osiągnięcia przez Zespół Deweloperski Celu Sprintu. Każdego dnia Sprintu samoorganizujący się Zespół Deweloperski powinien wiedzieć jak będzie przebiegała dalsza współpraca by możliwe było osiągnięcie Celu Sprintu i stworzenie przed końcem Sprintu oczekiwanego Przyrostu.</p>
+<p>Przebieg spotkania jest ustalany przez Zespół Deweloperski. Może ono być przeprowadzane na wiele sposobów, jeśli tylko pozostaje poświęcone postępom prac w kierunku osiągnięcia Celu Sprintu. Niektóre Zespoły Deweloperskie wykorzystują pytania, inne prowadzą dyskusje.
+Oto przykład pytań, które mogą być wykorzystywane podczas tego spotkania:</p>
+<ul>
+<li>Co zrobiłem wczoraj, co pomogło Zespołowi Deweloperskiemu przybliżyć się do osiągnięcia Celu Sprintu?</li>
+<li>Co zrobię dzisiaj, co pomoże Zespołowi Deweloperskiemu przybliżyć się do osiągnięcia Celu Sprintu?</li>
+<li>Czy widzę jakiekolwiek przeszkody mogące uniemożliwić mi lub Zespołowi Deweloperskiemu osiągnięcie Celu Sprintu?</li>
+</ul>
+<p>Cały Zespół Deweloperski lub poszczególni jego członkowie często spotykają się bezpośrednio po Codziennym Scrumie, aby szczegółowo przedyskutować wybrane zagadnienia, dostosować lub zredefiniować plan prac na pozostałą część Sprintu.</p>
+<p>Scrum Master zapewnia, że Zespół Deweloperski spotyka się w ramach Codziennego Scruma, jednak to Zespół Deweloperski jest odpowiedzialny za przeprowadzenie tego spotkania. Scrum Master uczy Zespół Deweloperski, jak utrzymać piętnastominutowe ograniczenie czasowe Codziennego Scruma.</p>
+<p>Codzienny Scrum jest wewnętrznym spotkaniem Zespołu Deweloperskiego. Jeśli inne osoby są obecne, Scrum Master upewnia się, że nie zaburzają one jego przebiegu.</p>
+<p>Codzienne Scrumy poprawiają komunikację, eliminują inne spotkania, identyfikują i usuwają przeszkody, sprzyjają szybkiemu podejmowaniu decyzji i podnoszą poziom wiedzy Zespołu Deweloperskiego. Jest to spotkanie kluczowe dla procesu inspekcji i adaptacji.</p>
+<h3 id="przegl-d-sprintu">Przegląd Sprintu</h3>
+<p>Przegląd Sprintu jest organizowany na zakończenie Sprintu w celu przeprowadzenia inspekcji Przyrostu i, jeśli zajdzie taka potrzeba, dostosowania Backlogu Produktu. Podczas Przeglądu Sprintu Zespół Scrumowy i interesariusze wspólnie analizują to, co zostało ukończone w Sprincie. Na tej podstawie oraz na podstawie zmian wprowadzonych do Backlogu Produktu w trakcie trwania Sprintu, uczestnicy spotkania wspólnie rozważają, co mogłoby być wykonane w następnej kolejności, aby zoptymalizować wartość. Przegląd Sprintu jest nieformalnym spotkaniem roboczym, a nie spotkaniem statusowym. Prezentacja Przyrostu ma na celu uzyskanie informacji zwrotnej i pobudzenie współpracy.</p>
+<p>Przegląd Sprintu jest maksymalnie czterogodzinnym spotkaniem dla miesięcznego Sprintu
+i krótszym dla krótszych Sprintów. Rolą Scrum Mastera jest zapewnienie, że spotkanie się
+odbywa i jego uczestnicy rozumieją jego cel. Scrum Master uczy wszystkie zaangażowane
+osoby, jak utrzymywać je w wyznaczonych ramach czasowych.</p>
+<p>Przegląd Sprintu obejmuje następujące punkty:</p>
+<ul>
+<li>Obecni są Zespół Scrumowy oraz kluczowi interesariusze zaproszeni przez Właściciela Produktu.</li>
+<li>Właściciel Produktu wyjaśnia, które elementy Backlogu Produktu zostały „Ukończone”, a które nie.</li>
+<li>Zespół Deweloperski omawia, co poszło dobrze w trakcie Sprintu, jakie napotkano problemy oraz jak te problemy rozwiązano.</li>
+<li>Zespół Deweloperski prezentuje „Ukończoną” pracę i odpowiada na pytania dotyczące Przyrostu.</li>
+<li>Właściciel Produktu omawia Backlog Produktu w jego aktualnej postaci. Jeśli zachodzi taka potrzeba, przewiduje prawdopodobny termin zakończenia prac, biorąc pod uwagę dotychczasowe postępy.</li>
+<li>Cała grupa wspólnie omawia kolejne kroki. W ten sposób Przegląd Sprintu dostarcza wartościowego wkładu w następujące po nim Planowanie Sprintu.</li>
+<li>Dokonuje się przeglądu tego, jak rynek lub potencjalne zastosowanie produktu mogły się zmienić i co w tej sytuacji jest najbardziej wartościową rzeczą do zrobienia.</li>
+<li>Rewiduje się czas, budżet, potencjalne możliwości i uwarunkowania rynkowe dla kolejnego przewidywanego wydania produktu.</li>
+</ul>
+<p>Rezultatem Przeglądu Sprintu jest zaktualizowany Backlog Produktu, pokazujący, które elementy prawdopodobnie zostaną zaplanowane na kolejny Sprint. Ponadto Backlog Produktu może zostać generalnie zmieniony w taki sposób, aby wykorzystać nadarzające się okazje.</p>
+<h3 id="retrospektywa-sprintu">Retrospektywa Sprintu</h3>
+<p>Retrospektywa Sprintu jest okazją dla Zespołu Scrumowego do przeprowadzenia inspekcji swoich działań i opracowania planu usprawnień, który zostanie wcielony w życie w najbliższym Sprincie.</p>
+<p>Retrospektywa Sprintu przeprowadzana jest po Przeglądzie, a przed kolejnym Planowaniem Sprintu.  Trwa nie dłużej niż trzy godziny dla Sprintów miesięcznej długości. Dla krótszych Sprintów zwykle zajmuje mniej czasu. Scrum Master zapewnia, że wydarzenie się odbywa, a uczestnicy rozumieją jego cel.</p>
+<p>Scrum Master zapewnia, by spotkanie to przebiegało w pozytywnej atmosferze i było produktywne. Uczy uczestników w jaki sposób można je utrzymać w ustalonych ramach czasowych. Scrum Master uczestniczy w Retrospektywie jako zwykły członek zespołu, reprezentując perspektywę odpowiedzialności za Scruma.</p>
+<p>Retrospektywa Sprintu ma na celu:</p>
+<ul>
+<li>sprawdzenie, co działo się w ostatnim Sprincie, biorąc pod uwagę ludzi, relacje, proces i narzędzia,</li>
+<li>zidentyfikowanie i uporządkowanie istotnych elementów, które sprawdziły się w działaniu oraz tych, które kwalifikują się do usprawnienia,</li>
+<li>stworzenie planu wprowadzania w życie usprawnień sposobu wykonywania pracy przez Zespół Scrumowy.</li>
+</ul>
+<p>Scrum Master zachęca członków Zespołu Scrumowego do usprawniania, w ramach Scruma, stosowanych przez zespół procesu i praktyk wytwórczych tak, aby w kolejnym Sprincie uczynić pracę bardziej efektywną i dającą więcej radości. Podczas każdej Retrospektywy Sprintu Zespół Scrumowy planuje, w jaki sposób podniesie jakość produktu poprzez usprawnienie pracy i dostosowanie definicji „Ukończenia”. Robi to w taki sposób by było to odpowiednie i nie stało w konflikcie z wytwarzanym produktem i wytycznymi organizacji.</p>
+<p>Zanim Retrospektywa Sprintu dobiegnie końca, Zespół Scrumowy powinien zidentyfikować usprawnienia, które planuje wprowadzić w kolejnym Sprincie. Zastosowanie tych usprawnień w kolejnych Sprintach jest przejawem adaptacji, która nastąpiła w efekcie autoinspekcji Zespołu Scrumowego. Mimo, że usprawnienia mogą być wprowadzane w dowolnym momencie, Retrospektywa Sprintu jest formalnym elementem Scruma, całkowicie skoncentrowanym na procesie inspekcji i adaptacji.</p>
+<h2 id="artefakty-scruma">Artefakty Scruma</h2>
+<p>Artefakty Scruma reprezentują pracę lub wartość, w celu uzyskania przejrzystości i stworzenia okazji do dokonania inspekcji i adaptacji. Są one zaprojektowane w taki sposób, by zwiększać dostępność i czytelność kluczowych informacji tak, by wszyscy zainteresowani rozumieli dany artefakt w taki sam sposób.</p>
+<h3 id="backlog-produktu">Backlog Produktu</h3>
+<p>Backlog Produktu to uporządkowana lista wszystkiego, co w danym momencie wiadomo odnośnie rozwoju produktu. Stanowi jedyne źródło wymaganych zmian, które mają być w produkcie wprowadzone. Odpowiedzialnym za Backlog Produktu, w tym jego treść, dostępność i kolejność elementów, jest Właściciel Produktu.</p>
+<p>Backlog Produktu nigdy nie jest kompletny. Jego wczesna wersja nakreśla początkowo znane i najlepiej rozumiane wymagania. Backlog Produktu ewoluuje wraz z produktem i środowiskiem, w którym ten produkt będzie używany. Zmienia się dynamicznie, aby uwzględnić to, czego produkt wymaga, aby stać się odpowiednim, konkurencyjnym i użytecznym. Istnieje tak długo, jak istnieje produkt.</p>
+<p>Backlog Produktu jest listą wszystkich cech, funkcji, wymagań, ulepszeń i korekt, które reprezentują zmiany wprowadzane do produktu w jego przyszłych wydaniach. Elementy Backlogu Produktu posiadają następujące atrybuty: opis, kolejność, oszacowanie i wartość. Ponadto elementy Backlog Produktu często zawierają opis testu dowodzącego ich wykonanie i kompletność zgodnie z definicją „Ukończenia”.</p>
+<p>W miarę, jak produkt jest używany i nabiera wartości, a otoczenie rynkowe dostarcza informacji zwrotnej, Backlog Produktu staje się coraz większą i bardziej wyczerpującą listą. Wymagania nie przestają się zmieniać, więc Backlog Produktu jest żywym artefaktem. Zmiany w wymaganiach biznesowych, sytuacji rynkowej czy technologii mogą prowadzić do zmian w Backlogu Produktu.</p>
+<p>Często nad jednym produktem pracuje wspólnie kilka Zespołów Scrumowych. Także w takiej sytuacji do opisywania przyszłej pracy nad produktem używany jest jeden Backlog Produktu. W takich przypadkach może zostać zastosowany dodatkowy atrybut grupujący elementy Backlogu Produktu.</p>
+<p>Doskonalenie (ang. <em>refinement</em>) Backlogu Produktu jest działaniem polegającym na dodawaniu szczegółów, oszacowań i porządkowaniu elementów Backlogu Produktu. Jest to ciągły proces, podczas którego Właściciel Produktu wraz z Zespołem Deweloperskim opracowują szczegóły elementów Backlogu Produktu. Podczas doskonalenia Backlogu Produktu jego elementy są przeglądane i korygowane. To, jak i kiedy prowadzone jest doskonalenie, zależy od Zespołu Scrumowego. Doskonalenie zazwyczaj zajmuje nie więcej niż 10% czasu Zespołu Deweloperskiego w Sprincie. Nie zmienia to faktu, że elementy Backlogu Produktu mogą być uaktualniane w każdej chwili przez Właściciela Produktu lub za jego zgodą.</p>
+<p>Elementy Backlogu Produktu znajdujące się wyżej są zwykle klarowniejsze i posiadają więcej szczegółów niż te ulokowane niżej. W oparciu o zwiększoną czytelność i większą liczbę szczegółów przygotowywane są bardziej precyzyjne oszacowania; im niżej w Backlogu Produktu, tym mniej szczegółów. Elementy przewidziane na najbliższy Sprint mają taką wielkość i szczegółowość, by każdy z nich mógł być „Ukończony” w pojedynczym Sprincie. Elementy Backlogu Produktu, które mogą zostać „Ukończone” przez Zespół Deweloperski w pojedynczym Sprincie, uznawane są za „Przygotowane” do rozważenia podczas Planowania Sprintu. Elementy Backlogu Produktu zwykle osiągają taki poziom przejrzystości poprzez opisany powyżej proces doskonalenia.</p>
+<p>Zespół Deweloperski jest odpowiedzialny za wszystkie oszacowania. Właściciel Produktu może wpływać na Zespół Deweloperski pomagając dostrzegać kompromisy i dokonywać odpowiednich wyborów, ale ostatecznie pracę szacują osoby, które będą ją wykonywać.</p>
+<h4 id="monitorowanie-post-p-w-wzgl-dem-celu">Monitorowanie postępów względem celu</h4>
+<p>W dowolnym momencie powinno być możliwe podsumowanie całej pozostającej do wykonania pracy. Właściciel Produktu dokonuje takiego podsumowania przynajmniej podczas każdego Przeglądu Sprintu. Następnie porównuje tę ilość z ilością pracy sprzed rozpoczęcia Sprintu, określoną podczas poprzednich Przeglądów Sprintu, aby ocenić, jak kształtuje się postęp pracy i możliwość jej ukończenia zgodnie z założonym celem i w wyznaczonym czasie. Ocena ta jest prezentowana w przejrzysty sposób wszystkim interesariuszom.</p>
+<p>Do prognozowania postępów prac stosowane są różne sposoby monitorowania trendu takie jak: spalanie/wypalanie (ang. <em>burn-down/burn-up</em>) lub wykresy kumulatywne. Wszystkie są pomocne, jednak nie umniejszają znaczenia empiryzmu. W złożonych środowiskach to, co się wydarzy, pozostaje niewiadomą. Tylko to, co już się zdarzyło, może być wykorzystywane do podejmowania decyzji wybiegających w przyszłość.</p>
+<h2 id="backlog-sprintu">Backlog Sprintu</h2>
+<p>Backlog Sprintu to zbiór elementów Backlogu Produktu wybranych do Sprintu rozszerzony o plan dostarczenia Przyrostu produktu i realizacji Celu Sprintu. Poprzez Backlog Sprintu Zespół Deweloperski prognozuje, które funkcjonalności znajdą się w kolejnym Przyroście i jaką pracę należy wykonać, aby te funkcjonalności dostarczyć w postaci „Ukończonego” Przyrostu.</p>
+<p>Backlog Sprintu obrazuje całą pracę, którą Zespół Deweloperski uznaje za niezbędną do osiągnięcia Celu Sprintu. W celu zapewnienia procesu ciągłego doskonalenia się, Backlog Sprintu zawiera przynajmniej jedno istotne usprawnienie zidentyfikowane na poprzedniej Retrospektywie.</p>
+<p>Backlog Sprintu to plan wystarczająco szczegółowy, by postępy prac były zrozumiałe podczas Codziennego Scruma. Zespół Deweloperski modyfikuje Backlog Sprintu w czasie trwania całego Sprintu, tym samym „wyłania się” on podczas Sprintu. To wyłanianie się zachodzi w miarę jak Zespół Deweloperski realizuje plan i dowiaduje się coraz więcej na temat pracy, która jest potrzebna do osiągnięcia Celu Sprintu.</p>
+<p>Jeśli pojawia się potrzeba wykonania dodatkowej pracy, Zespół Deweloperski dodaje ją do Backlogu Sprintu. W miarę jak praca jest wykonywana albo kończona, aktualizowane jest oszacowanie pozostałej do wykonania pracy. Zbędne elementy planu są usuwane. Jedynie Zespół Deweloperski może zmieniać swój Backlog Sprintu w trakcie Sprintu. Backlog Sprintu jest dobrze widocznym, odpowiadającym rzeczywistości, tworzonym na bieżąco obrazem pracy, jaką Zespół Deweloperski planuje wykonać w trakcie Sprintu. Backlog Sprintu jest wyłączną własnością Zespołu Deweloperskiego.</p>
+<h4 id="monitorowanie-post-p-w-sprintu">Monitorowanie postępów Sprintu</h4>
+<p>W każdym momencie Sprintu cała pozostająca do wykonania praca z Backlogu Sprintu może zostać zsumowana. Zespół Deweloperski podsumowuje pozostałą do wykonania pracę przynajmniej raz dziennie – podczas Codziennego Scruma. Zespół Deweloperski obserwuje zmiany jej ilości każdego dnia Sprintu i na tej podstawie określa prawdopodobieństwo osiągnięcia Celu Sprintu. Poprzez codzienne monitorowanie pozostałej do wykonania pracy, Zespół Deweloperski zarządza postępami swojej pracy.</p>
+<h3 id="przyrost">Przyrost</h3>
+<p>Przyrost jest sumą wszystkich elementów Backlogu Produktu zakończonych podczas Sprintu i wartości Przyrostów ze wszystkich Sprintów poprzednich. Na koniec Sprintu nowy Przyrost musi być „Ukończony”, co oznacza, że musi on być gotowy do użycia i zgodny z definicją „Ukończenia” Zespołu Scrumowego. Przyrostem jest namacalny rezultat wykonanej pracy, podlegający empirycznej inspekcji na zakończenie Sprint. Reprezentuje on krok w kierunku wizji lub celu. Przyrost musi być gotowy do użycia niezależnie od tego, czy Właściciel Produktu decyduje się na jego wydanie.</p>
+<h2 id="przejrzysto-artefakt-w">Przejrzystość Artefaktów</h2>
+<p>Scrum opiera się na przejrzystości. Decyzje mające na celu optymalizację wartości i kontrolę ryzyka są podejmowane na podstawie obserwowanego stanu artefaktów. Solidna podstawa tych decyzji zależy od stopnia przejrzystości. Niepełna przejrzystość artefaktów może prowadzić do błędnych decyzji, obniżenia wartości i wzrostu ryzyka.</p>
+<p>Scrum Master musi pracować z Właścicielem Produktu, Zespołem Deweloperskim i pozostałymi zainteresowanymi stronami, aby ustalić czy artefakty są w pełni przejrzyste. Istnieje szereg sposobów radzenia sobie z brakiem pełnej przejrzystości i Scrum Master musi pomagać wszystkim w doborze praktyk najbardziej odpowiednich w takiej sytuacji. Scrum Master może identyfikować niepełną przejrzystość poddając artefakty inspekcji, będąc wyczulonym na powtarzalność zachowań i wydarzeń (ang. <em>sensing patterns</em>), słuchając uważnie tego, o czym się rozmawia oraz wyłapując różnice pomiędzy oczekiwanymi a rzeczywistymi wynikami.</p>
+<p>Zadaniem Scrum Mastera jest praca z Zespołem Scrumowym i całą organizacją w celu zwiększenia przejrzystości artefaktów. Praca ta polega zazwyczaj na dowiadywaniu się, przekonywaniu i powodowaniu zmiany. Przejrzystość nie pojawia się z dnia na dzień — jest drogą.</p>
+<h3 id="definicja-uko-czenia-">Definicja „Ukończenia”</h3>
+<p>Kiedy element Backlogu Produktu albo Przyrost jest nazywany „Ukończonym”, wszyscy muszą rozumieć, co to właściwie oznacza. Mimo, że stan ten może różnić się znacznie pomiędzy Zespołami Scrumowymi, w celu zapewnienia przejrzystości wszyscy członkowie danego zespołu muszą mieć wspólne rozumienie, co oznacza stwierdzenie, że praca została ukończona. Tym właśnie jest definicja Ukończenia (ang. <em>definition of „Done”</em>) Zespołu Scrumowego, używana w ocenie, czy praca nad Przyrostem produktu jest wykonana.</p>
+<p>Ta sama definicja pomaga Zespołowi Deweloperskiemu w określeniu, ile elementów Backlogu Produktu może zostać wybranych podczas Planowania Sprintu. Celem każdego ze Sprintu jest dostarczenie Przyrostu gotowej do potencjalnego wydania funkcjonalności, zgodnie z aktualną definicją „Ukończenia” tego Zespołu Scrumowego.</p>
+<p>W każdym Sprincie Zespoły Deweloperskie dostarczają Przyrost funkcjonalności produktu. Przyrost ten musi być gotowy do użycia, żeby Właściciel Produktu mógł zdecydować o jego niezwłocznym wydaniu. Kiedy definicja „Ukończenia” Przyrostu jest elementem konwencji, standardów lub wytycznych stosowanych przez organizację wytwarzającą oprogramowanie, wszystkie Zespoły Scrumowe muszą traktować ją jako niezbędne minimum i się jej podporządkować.</p>
+<p>Jeśli natomiast definicja „Ukończenia” Przyrostu nie jest elementem standardu organizacji
+wytwarzającej oprogramowanie, Zespół Deweloperski musi opracować definicję  „Ukończenia” właściwą dla wytwarzanego produktu. Gdy nad wydaniem systemu lub produktu pracuje wiele Zespołów Scrumowych, wszystkie Zespoły Deweloperskie muszą wspólnie ustanowić definicję „Ukończenia”.</p>
+<p>Każdy Przyrost jest rozszerzeniem wszystkich poprzednich Przyrostów i jest dokładnie przetestowany w celu zapewnienia, że wszystkie one działają razem. W miarę jak Zespoły Scrumowe dojrzewają, oczekuje się, że ich definicja „Ukończenia” będzie zawierała coraz bardziej rygorystyczne kryteria zapewniania jeszcze wyższej jakości. Nowe wersje tej definicji mogą identyfikować pracę pozostającą do wykonania wobec poprzednio „Ukończonych” przyrostów. Każdy produkt lub system powinien posiadać definicję „Ukończenia”, która standaryzuje wykonywanie każdej pracy nad nim.</p>
+<h2 id="uwagi-ko-cowe">Uwagi końcowe</h2>
+<p>Scrum jest ogólnodostępny, bezpłatny i jest oferowany za pośrednictwem tego Przewodnika. Role, artefakty, wydarzenia oraz reguły Scruma są niezmienne i choć możliwe jest wykorzystanie tylko niektórych jego elementów, wynikiem takiego postępowania nie będzie Scrum. Scrum istnieje tylko w swojej pełnej postaci i sprawdza się doskonale w roli ramy dla innych technik, metodyk czy praktyk.</p>
+<h2 id="wyrazy-uznania">Wyrazy uznania</h2>
+<h3 id="ludzie">Ludzie</h3>
+<p>Spośród tysięcy osób, które przyczyniły się do powstania Scruma, należy wyróżnić tych, którzy byli kluczowi w początkowym okresie: Jeffa Sutherlanda współpracującego z Jeffem McKenną oraz Johnem Scumniotalesem, Kena Schwabera działającego wspólnie z Mikiem Smithem i Chrisem Martinem, i ich wszystkich pracujących razem. Wiele innych osób przyczyniło się do rozwoju Scruma w kolejnych latach. Bez ich pomocy nie przyjąłby on postaci znanej dzisiaj.</p>
+<h3 id="historia">Historia</h3>
+<p>Ken Schwaber i Jeff Sutherland pracowali nad Scrumem do 1995 roku, kiedy to wspólnie zaprezentowali go podczas konferencji OOPSLA. Prezentacja ta w znacznym stopniu udokumentowała wiedzę, którą Ken i Jeff nabyli stosując Scruma na przestrzeni kilku poprzednich lat i stanowi pierwszą formalną, publiczną definicję Scruma.</p>
+<p>Scrum ma za sobą długą historię, której nie będziemy tutaj przytaczać. Aby uhonorować miejsca, gdzie był początkowo stosowany i doskonalony, wymieńmy: Individual, Inc., Newspage, Fidelity Investments oraz IDX (obecnie GE Medical). Przewodnik po Scrumie dokumentuje Scruma w takiej postaci w jakiej został on stworzony i jest utrzymywany od ponad 20 lat przez Jeffa Sutherlanda i Kena Schwabera. Inne źródła dostarczają wzorców, procesów i pomysłów, które uzupełniają wytyczone przez Scruma ramy. Zwiększają one produktywność, wartość, kreatywność i dumę z wykonywanej pracy.</p>
+<h3 id="t-umaczenie">Tłumaczenie</h3>
+<p>Niniejszy Przewodnik został przetłumaczony z wersji oryginalnej, opracowanej przez Kena Schwabera i Jeffa Sutherlanda. Do opracowania tłumaczenia aktualnej wersji przyczynili się: Tomek Włodarek (<a href="mailto:tomek@poddrzewem.pl">tomek@poddrzewem.pl</a>), Michał Michałowski (<a href="mailto:m.michalow@gmail.com">m.michalow@gmail.com</a>), Andrzej Zińczuk (<a href="mailto:azinczuk@gmail.com">azinczuk@gmail.com</a>), Adam Michalczyk (<a href="mailto:tashisenge@gmail.com">tashisenge@gmail.com</a>) i Bartosz Janowski (<a href="mailto:xebord@gmail.com">xebord@gmail.com</a>). Obecne tłumaczenie powstało na bazie poprzednich wersji, w których przygotowaniu uczestniczyli Kate Terlecka, Bogdan Baraszkiewicz, Norbert Kołakowski i wiele innych osób.</p>
+<p>Wersje markdown, HTML, epub i mobi: Dominik Piekarczyk (<a href="mailto:piekarczyk@gmail.com">piekarczyk@gmail.com</a>)</p>
+<h2 id="zmiany-w-przewodniku-pomi-dzy-wersjami-2016-a-2017">Zmiany w przewodniku pomiędzy wersjami 2016 a 2017</h2>
+<h3 id="1-dodano-sekcj-o-zastosowaniach-scruma">1. Dodano sekcję o zastosowaniach Scruma</h3>
+<p>Początkowo Scrum został stworzony w celu zarządzania i wytwarzania produktów. Począwszy od wczesnych lat dziewięćdziesiątych był wykorzystywany powszechnie, na całym świecie, do:</p>
+<ol>
+<li>odkrywania i identyfikowania rentowności rynków, technologii i potencjału produktów,</li>
+<li>tworzenia i rozbudowy produktów,</li>
+<li>wprowadzania na rynek produktów i ich rozszerzeń, nawet wielokrotnie każdego dnia,</li>
+<li>rozwijania i utrzymywania środowisk typu cloud (online, bezpiecznych, dostępnych na żądanie) oraz innych środowisk operacyjnych do zastosowań produktowych,</li>
+<li>utrzymywania i modernizacji produktów.</li>
+</ol>
+<p>Scrum był stosowany do rozwijania oprogramowania, sprzętu, oprogramowania wbudowanego (ang. <em>embedded</em>), sieci zintegrowanych usług i autonomicznych pojazdów. Znalazł swoje zastosowanie w szkolnictwie, administracji publicznej, marketingu, zarządzaniu operacjami w organizacjach – praktycznie każdej sferze codziennego życia.</p>
+<p>Każdego dnia Scrum udowadnia swoją przydatność w obliczu gwałtownie rosnącej złożoności technologii, zmian rynkowych, środowiska i zachodzących pomiędzy nimi interakcji. Scrum dowiódł swojej skuteczności w iteracyjnym i przyrostowym transferze wiedzy. Obecnie znajduje szerokie zastosowanie w rozwoju produktów, usług i w zarządzaniu organizacjami.</p>
+<p>Istotą Scruma jest niewielki zespół. Niezależny zespół jest wysoce elastyczny i potrafi sprawnie się dostosowywać. Te atuty sprawdzają się zarówno w przypadku pojedynczych zespołów, kilku współpracujących zespołów, wielu zespołów oraz sieci powiązanych ze sobą zespołów, które wykonują pracę, rozwijają, wydają na rynek i utrzymują efekty pracy tysięcy osób. Współpracują one i współdziałają ze sobą wykorzystując wyrafinowane środowiska i architektury systemowe.</p>
+<p>Słowa „rozwijać” (ang. <em>develop</em>) i „rozwijanie” (ang. <em>development</em>) są używanie w tym przewodniku w odniesieniu do złożonej pracy, której przykłady wymieniono powyżej.</p>
+<h3 id="2-zmieniono-brzmienie-sekcji-opisuj-cej-rol-scrum-mastera-aby-zwi-kszy-czytelno-tej-roli-obecne-brzmienie-jest-nast-puj-ce-">2. Zmieniono brzmienie sekcji opisującej rolę Scrum Mastera aby zwiększyć czytelność tej roli. Obecne brzmienie jest następujące:</h3>
+<p>Scrum Master jest odpowiedzialny za promowanie i wspieranie stosowania Scruma tak, jak został on zdefiniowany w tym Przewodniku. Scrum Masterzy osiągają to poprzez pomaganie wszystkim w zrozumieniu teorii Scruma, jego praktyk, reguł i wartości.</p>
+<p>Scrum Master jest przywódcą służebnym (ang. <em>servant leader</em>) Zespołu Scrumowego. Scrum Master pomaga również osobom spoza Zespołu Scrumowego zrozumieć, które z ich interakcji z Zespołem Scrumowym są pomocne, a które nie. Scrum Master pomaga zmieniać te zachowania, aby maksymalizować wartość wytwarzaną przez Zespół Scrumowy.</p>
+<h3 id="3-dodano-do-sekcji-opisuj-cej-wparcie-scrum-mastera-dla-w-a-ciciela-produktu">3. Dodano do sekcji opisującej wparcie Scrum Mastera dla Właściciela Produktu</h3>
+<p>Scrum Master służy pomocą Właścicielowi Produktu w wielu aspektach, na przykład:</p>
+<ul>
+<li>zapewniając, że cele, zakres i domena produktowa są zrozumiałe dla wszystkich w Zespole Scrumowym, tak dobrze jak to tylko możliwe […]</li>
+</ul>
+<h3 id="4-zaktualizowano-pierwszy-paragraf-sekcji-opisuj-cej-codziennego-scruma-jego-obecne-brzmienie-jest-nast-puj-ce-">4. Zaktualizowano pierwszy paragraf sekcji opisującej Codziennego Scruma. Jego obecne brzmienie jest następujące:</h3>
+<p>Codzienny Scrum jest wydarzeniem dla Zespołu Deweloperskiego, ograniczonym czasowo do piętnastu minut. Codzienny Scrum organizowany jest każdego dnia Sprintu. W jego trakcie Zespół Deweloperski planuje pracę na najbliższe dwadzieścia cztery godziny. W ten sposób, poprzez inspekcję pracy wykonanej od poprzedniego Codziennego Scruma, zespół optymalizuje współpracę i efektywność oraz prognozuje nadchodzącą pracę w Sprincie. W celu zredukowania złożoności Codzienny Scrum odbywa się codziennie w stałym miejscu i o stałej porze.</p>
+<h3 id="5-dodano-nast-puj-c-tre-do-sekcji-opisuj-cej-codziennego-scruma-aby-poprawi-czytelno-cel-w-codziennego-scruma-">5. Dodano następującą treść do sekcji opisującej Codziennego Scruma aby poprawić czytelność celów Codziennego Scruma:</h3>
+<p>Przebieg spotkania jest ustalany przez Zespół Deweloperski. Może ono być przeprowadzane na wiele sposobów, jeśli tylko pozostaje poświęcone postępom prac w kierunku osiągnięcia Celu Sprintu. Niektóre Zespoły Deweloperskie wykorzystują pytania, inne prowadzą dyskusje. Oto przykład pytań, które mogą być wykorzystywane podczas tego spotkania:</p>
+<ul>
+<li>Co zrobiłem wczoraj, co pomogło Zespołowi Deweloperskiemu przybliżyć się do osiągnięcia Celu Sprintu?</li>
+<li>Co zrobię dzisiaj, co pomoże Zespołowi Deweloperskiemu przybliżyć się do osiągnięcia Celu Sprintu?</li>
+<li>Czy widzę jakiekolwiek przeszkody mogące uniemożliwić mi lub Zespołowi Deweloperskiemu osiągnięcie Celu Sprintu?</li>
+</ul>
+<h3 id="6-zwi-kszono-czytelno-definicji-ogranicze-czasowych">6. Zwiększono czytelność definicji ograniczeń czasowych</h3>
+<p>Zastosowano wyrażenia "maksymalnie" i "nie dłużej niż" aby wyjaśnić, że Wydarzenia mają oznaczoną górną granicę czasu trwania i mogą zakończyć się wcześniej.</p>
+<h3 id="7-dodano-nast-puj-c-tre-do-sekcji-opisuj-cej-backlog-sprintu">7. Dodano następującą treść do sekcji opisującej Backlog Sprintu</h3>
+<p>W celu zapewnienia procesu ciągłego doskonalenia się, Backlog Sprintu zawiera przynajmniej jedno istotne usprawnienie zidentyfikowane na poprzedniej Retrospektywie.</p>
+<h3 id="8-poprawiono-czytelno-sekcji-opisuj-cej-przyrost">8. Poprawiono czytelność sekcji opisującej Przyrost</h3>
+<p>Przyrostem jest namacalny rezultat wykonanej pracy, podlegający empirycznej inspekcji na zakończenie Sprint. Reprezentuje on krok w kierunku wizji lub celu.</p></body>
+</html>
