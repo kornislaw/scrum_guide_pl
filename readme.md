@@ -11,4 +11,4 @@ My goal was to have a [lightweight version](scrum_guide_2017_pl.md) which then I
 
 Jest to polskie tłumaczenie oficjalnego Przewodnika Scrum. Przewodnik w oryginalnym formacie (PDF) jest dostępny tutaj.
 
-Moim celem było posiadanie [lightweight version](scrum_guide_2017_pl.md) tego przewodnika, który następnie mógłbym przekonwertować do formatów czytników [epub](scrum_guide_2017_pl.epub) i [mobi](scrum_guide_2017_pl.mobi).
+Moim celem było posiadanie ["lekkiego" formatu](scrum_guide_2017_pl.md) tego przewodnika, który następnie mógłbym przekonwertować do formatów czytników [epub](scrum_guide_2017_pl.epub) i [mobi](scrum_guide_2017_pl.mobi).
