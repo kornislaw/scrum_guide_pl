@@ -1,7 +1,7 @@
 Scrum Guide™
 ============
 
-Ta wersja Przewodnika Scrum w formacie markdown jest konwersją polskiego tłumaczenia wersji PDF z listopada 2017 [dostępnej w serwisie www.scrumguides.org](http://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf).
+Wersje Przewodnika Scrum w formatach markdown, HTML, epub i mobi są konwersją polskiego tłumaczenia wersji PDF z listopada 2017 [dostępnej w serwisie www.scrumguides.org](http://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf).
 
 
 Przewodnik po Scrumie: Reguły gry
@@ -234,7 +234,7 @@ Wydarzenia w Scrumie
 
 Wydarzenia (ang. *events*) opisane w Scrumie są używane do wprowadzenia regularności i ograniczenia potrzeby organizowania innych, nieujętych w Scrumie spotkań. Wszystkie wydarzenia w Scrumie są ograniczone czasowo (ang. *timebox*), co oznacza, że mają ustalony maksymalny czas trwania. Po rozpoczęciu Sprintu jego czas trwania jest stały – nie może być skracany ani wydłużany. Pozostałe wydarzenia mogą zakończyć się, kiedy ich cel zostanie osiągnięty, co zapewnia właściwe wykorzystanie czasu i zapobiega wkradaniu się marnotrawstwa w proces.
 
-Poza Sprintem, który zawiera w sobie pozostałe wydarzenia, każde ze wydarzeń w Scrumie jest formalną okazją do przeprowadzenia celowej inspekcji i dokonania adaptacji. Wydarzenia w Scrumie są specjalnie zaprojektowane w taki sposób, aby zapewnić niezbędną przejrzystość i umożliwić inspekcję. Nieuwzględnienie któregokolwiek z nich redukuje przejrzystość i jest utraconą szansą na dokonanie inspekcji i adaptacji.
+Poza Sprintem, który zawiera w sobie pozostałe wydarzenia, każde z wydarzeń w Scrumie jest formalną okazją do przeprowadzenia celowej inspekcji i dokonania adaptacji. Wydarzenia w Scrumie są specjalnie zaprojektowane w taki sposób, aby zapewnić niezbędną przejrzystość i umożliwić inspekcję. Nieuwzględnienie któregokolwiek z nich redukuje przejrzystość i jest utraconą szansą na dokonanie inspekcji i adaptacji.
 
 ### Sprint
 
@@ -366,9 +366,9 @@ Backlog Produktu to uporządkowana lista wszystkiego, co w danym momencie wiadom
 
 Backlog Produktu nigdy nie jest kompletny. Jego wczesna wersja nakreśla początkowo znane i najlepiej rozumiane wymagania. Backlog Produktu ewoluuje wraz z produktem i środowiskiem, w którym ten produkt będzie używany. Zmienia się dynamicznie, aby uwzględnić to, czego produkt wymaga, aby stać się odpowiednim, konkurencyjnym i użytecznym. Istnieje tak długo, jak istnieje produkt.
 
-Backlog Produktu jest listą wszystkich cech, funkcji, wymagań, ulepszeń i korekt, które reprezentują zmiany wprowadzane do produktu w jego przyszłych wydaniach. Elementy Backlogu Produktu posiadają następujące atrybuty: opis, kolejność, oszacowanie i wartość. Ponadto elementy Backlog Produktu często zawierają opis testu dowodzącego ich wykonanie i kompletność zgodnie z definicją „Ukończenia”.
+Backlog Produktu jest listą wszystkich cech, funkcji, wymagań, ulepszeń i korekt, które reprezentują zmiany wprowadzane do produktu w jego przyszłych wydaniach. Elementy Backlogu Produktu posiadają następujące atrybuty: opis, kolejność, oszacowanie i wartość. Ponadto elementy Backlogu Produktu często zawierają opis testu dowodzącego ich wykonanie i kompletność zgodnie z definicją „Ukończenia”.
 
-W miarę, jak produkt jest używany i nabiera wartości, a otoczenie rynkowe dostarcza informacji zwrotnej, Backlog Produktu staje się coraz większą i bardziej wyczerpującą listą. Wymagania nie przestają się zmieniać, więc Backlog Produktu jest żywym artefaktem. Zmiany w wymaganiach biznesowych, sytuacji rynkowej czy technologii mogą prowadzić do zmian w Backlogu Produktu.
+W miarę jak produkt jest używany i nabiera wartości, a otoczenie rynkowe dostarcza informacji zwrotnej, Backlog Produktu staje się coraz większą i bardziej wyczerpującą listą. Wymagania nie przestają się zmieniać, więc Backlog Produktu jest żywym artefaktem. Zmiany w wymaganiach biznesowych, sytuacji rynkowej czy technologii mogą prowadzić do zmian w Backlogu Produktu.
 
 Często nad jednym produktem pracuje wspólnie kilka Zespołów Scrumowych. Także w takiej sytuacji do opisywania przyszłej pracy nad produktem używany jest jeden Backlog Produktu. W takich przypadkach może zostać zastosowany dodatkowy atrybut grupujący elementy Backlogu Produktu.
 
@@ -399,7 +399,7 @@ W każdym momencie Sprintu cała pozostająca do wykonania praca z Backlogu Spri
 
 ### Przyrost
 
-Przyrost jest sumą wszystkich elementów Backlogu Produktu zakończonych podczas Sprintu i wartości Przyrostów ze wszystkich Sprintów poprzednich. Na koniec Sprintu nowy Przyrost musi być „Ukończony”, co oznacza, że musi on być gotowy do użycia i zgodny z definicją „Ukończenia” Zespołu Scrumowego. Przyrostem jest namacalny rezultat wykonanej pracy, podlegający empirycznej inspekcji na zakończenie Sprint. Reprezentuje on krok w kierunku wizji lub celu. Przyrost musi być gotowy do użycia niezależnie od tego, czy Właściciel Produktu decyduje się na jego wydanie.
+Przyrost jest sumą wszystkich elementów Backlogu Produktu zakończonych podczas Sprintu i wartości Przyrostów ze wszystkich Sprintów poprzednich. Na koniec Sprintu nowy Przyrost musi być „Ukończony”, co oznacza, że musi on być gotowy do użycia i zgodny z definicją „Ukończenia” Zespołu Scrumowego. Przyrostem jest namacalny rezultat wykonanej pracy, podlegający empirycznej inspekcji na zakończenie Sprintu. Reprezentuje on krok w kierunku wizji lub celu. Przyrost musi być gotowy do użycia niezależnie od tego, czy Właściciel Produktu decyduje się na jego wydanie.
 
 
 Przejrzystość Artefaktów
@@ -470,7 +470,7 @@ Każdego dnia Scrum udowadnia swoją przydatność w obliczu gwałtownie rosnąc
 
 Istotą Scruma jest niewielki zespół. Niezależny zespół jest wysoce elastyczny i potrafi sprawnie się dostosowywać. Te atuty sprawdzają się zarówno w przypadku pojedynczych zespołów, kilku współpracujących zespołów, wielu zespołów oraz sieci powiązanych ze sobą zespołów, które wykonują pracę, rozwijają, wydają na rynek i utrzymują efekty pracy tysięcy osób. Współpracują one i współdziałają ze sobą wykorzystując wyrafinowane środowiska i architektury systemowe.
 
-Słowa „rozwijać” (ang. *develop*) i „rozwijanie” (ang. *development*) są używanie w tym przewodniku w odniesieniu do złożonej pracy, której przykłady wymieniono powyżej.
+Słowa „rozwijać” (ang. *develop*) i „rozwijanie” (ang. *development*) są używane w tym przewodniku w odniesieniu do złożonej pracy, której przykłady wymieniono powyżej.
 
 ### 2. Zmieniono brzmienie sekcji opisującej rolę Scrum Mastera aby zwiększyć czytelność tej roli. Obecne brzmienie jest następujące:
 
@@ -506,4 +506,4 @@ W celu zapewnienia procesu ciągłego doskonalenia się, Backlog Sprintu zawiera
 
 ### 8. Poprawiono czytelność sekcji opisującej Przyrost
 
-Przyrostem jest namacalny rezultat wykonanej pracy, podlegający empirycznej inspekcji na zakończenie Sprint. Reprezentuje on krok w kierunku wizji lub celu.
+Przyrostem jest namacalny rezultat wykonanej pracy, podlegający empirycznej inspekcji na zakończenie Sprintu. Reprezentuje on krok w kierunku wizji lub celu.
